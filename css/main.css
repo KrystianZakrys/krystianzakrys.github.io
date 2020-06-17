@@ -7,7 +7,7 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: #060c21;
+    background: #111127;
 }
 
 .container{
@@ -74,13 +74,13 @@ body{
     display: inline-block;
     color: white;
     transition: 0.5s;
-    transform: translateY(-40px);
+    transform: translateY(-50px);
     opacity: 0;
     visibility: hidden;
 }
 
 .box:hover .content a{
-     transform: translateY(0);
+     transform: translateY(10px);
     opacity: 1;
     visibility: visible;
 }
