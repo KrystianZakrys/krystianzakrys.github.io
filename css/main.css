@@ -149,8 +149,8 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
     justify-content: center;
     align-items: center;
 }
-.section .main-title{
-        padding: 2vw 6vw 2vw 6vw;
+.padding-maintitle{
+    padding: 2vw 6vw 2vw 6vw;
 }
 
 .section{
