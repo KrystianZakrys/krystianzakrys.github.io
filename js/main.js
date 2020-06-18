@@ -3,7 +3,7 @@ var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
     loop: true,
-    cursor: '&#9608;',
+    cursor: '&#9616;',
     delay: 'Natural'
 });
 
@@ -22,6 +22,6 @@ typewriter.typeString("<strong>Usługi informatyczne.<strong>")
     .typeString('Strony WWW na zlecenie')
     .pauseFor(2500)    
     .deleteAll()
-    .typeString('Konsultacje oraz serwis komputerowy (Software)')
+    .typeString('Konsultacje oraz serwis komputerowy')
     .pauseFor(3500)  
     .start();
