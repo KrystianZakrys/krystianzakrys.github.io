@@ -161,6 +161,13 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
     margin: 0vw 10vw 0vw 10vw;
 }
 
+.section-cards{
+     min-height: 25vh;
+    max-width: 100%;
+    padding: 2vw;
+    margin: 0vw 10vw 0vw 10vw;
+}
+
 .bg-foto{
     border-radius: 50%;
     width: 90vh;
