@@ -6,6 +6,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #111127;
     color: white;
+    overflow-x: hidden;
 }
 
 .container{
@@ -42,6 +43,12 @@ body{
     font-size: 10em;
     color: rgb(255,255,255,.05);
     transition: 0.5s;
+}
+
+.box-shadow{
+    -webkit-box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
+box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
 }
 
 .box:hover .content h2{
@@ -142,9 +149,24 @@ body{
     justify-content: center;
     align-items: center;
 }
+.section .main-title{
+        padding: 2vw 6vw 2vw 6vw;
+}
+
 .section{
     width: 100%;
     min-height: 25vh;
+    max-width: 100%;
     padding: 2vw;
     margin: 0vw 10vw 0vw 10vw;
+}
+
+.bg-foto{
+    border-radius: 50%;
+    width: 90vh;
+    position: absolute;
+    right: 10vw;
+    top:-60px;
+    filter: grayscale(100%) contrast(95%) brightness(0.65);
+    
 }
