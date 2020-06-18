@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
 body{
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -110,6 +112,28 @@ body{
 }
 .Typewriter__cursor{
     color: greenyellow;    
+}
+
+.Typewriter__wrapper{
+    font-size: 26px
+}
+
+.main-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    margin: 0vw 10vw 0vw 10vw;
+    height: 60vh;
+    position: relative;
+}
+
+.main-title-text{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 13vh;
+}
+
+.main-title h2{
+    margin: 0px;
 }
 
 .wrapper{

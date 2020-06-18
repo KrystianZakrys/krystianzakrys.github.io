@@ -7,15 +7,21 @@ var typewriter = new Typewriter(app, {
     delay: 'Natural'
 });
 
-typewriter.typeString('Developer .NET')
+typewriter.typeString("<strong>Usługi informatyczne.<strong>")
+    .pauseFor(3000)
+    .deleteAll()
+    .typeString('Developer .NET')
     .pauseFor(2500)
     .deleteChars(19)
-    .typeString('Aplikacje webowe')
-    .pauseFor(2500)
+    .typeString('Aplikacje webowe w technologii .NET')
+    .pauseFor(3500)
+    .deleteChars(25)
+    .typeString('desktopowe w technologii .NET')
+    .pauseFor(3500)
     .deleteAll()
-    .typeString('Strony WWW')
+    .typeString('Strony WWW na zlecenie')
     .pauseFor(2500)    
     .deleteAll()
-    .typeString('Konsultacje oraz serwis komputerowy')
-    .pauseFor(2500)  
+    .typeString('Konsultacje oraz serwis komputerowy (Software)')
+    .pauseFor(3500)  
     .start();
