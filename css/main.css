@@ -121,7 +121,6 @@ body{
 .main-title{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 30px;
-    margin: 0vw 10vw 0vw 10vw;
     height: 60vh;
     position: relative;
 }
@@ -146,5 +145,6 @@ body{
 .section{
     width: 100%;
     min-height: 25vh;
-    padding: 2vw
+    padding: 2vw;
+    margin: 0vw 10vw 0vw 10vw;
 }
