@@ -58,7 +58,7 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
 }
 
 .box:hover .content h2{
-    top: -140px;
+    top: -120px;
 }
 
 .box .content h3{
@@ -88,10 +88,12 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
     transform: translateY(-50px);
     opacity: 0;
     visibility: hidden;
+    width: 106px;
+    margin-bottom: 5px;
 }
 
 .box:hover .content a{
-     transform: translateY(10px);
+    transform: translateY(10px);
     opacity: 1;
     visibility: visible;
 }
@@ -125,6 +127,7 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
 }
 .Typewriter__cursor{
     color: white;    
+    font-size: 26px
 }
 
 .Typewriter__wrapper{
