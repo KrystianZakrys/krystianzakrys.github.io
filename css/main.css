@@ -198,13 +198,12 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
 }
 
 .inverted-section-container{
-    background: white;
+    background: #5400a7;
     padding-top: 20px;
     margin-top: -10px;    
 }
 .inverted-section{
-    background: white;
-    color: black;
+    background: #5400a7;
 }
 
 //progress bar
