@@ -59,7 +59,7 @@ box-shadow: 13px 11px 29px -14px rgba(0,0,0,0.75);
 }
 
 .box:hover .content h2{
-    top: -120px;
+    top: -110px;
 }
 
 .box .content h3{
