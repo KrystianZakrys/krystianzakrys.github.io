@@ -351,7 +351,6 @@ svg>*{
     }
     .bg-foto{        
           max-width: 100%;
-    clip: rect(0px, 527px, 970px, 0px);
     background-color: white;
     right: 0px;
     }
