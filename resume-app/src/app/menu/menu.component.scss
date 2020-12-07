@@ -1,0 +1,39 @@
+.menu-container{
+    @media only screen and (max-width: 700px){
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo-text{
+    font-size: 32pt;
+}
+
+.logo-second-line{
+    margin-top: -10px;
+    line-height: 0.1;
+    letter-spacing: 5px;
+}
+
+.menu-separator{
+    height: 3px;
+    background-color: white;
+}
+
+.menu-description{
+    letter-spacing: 4px;
+}
+
+.navbar{
+    font-size: 14pt;
+}
+
+.nav-link{
+    color:white;
+}
+
+.navbar-nav > a{
+    margin-right: 15px;
+}
