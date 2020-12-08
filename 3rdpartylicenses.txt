@@ -10,6 +10,9 @@ MIT
 @angular/router
 MIT
 
+angular-tag-cloud-module
+SEE LICENSE IN LICENSE
+
 css-loader
 MIT
 Copyright JS Foundation and other contributors
