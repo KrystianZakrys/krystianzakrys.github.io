@@ -1,0 +1,70 @@
+html{
+    height: 100%;
+
+
+}
+
+.background-gradient{
+    background: rgb(53,0,56);
+    background: linear-gradient(180deg, rgba(53,0,56,1) 0%, rgba(101,36,221,1) 0%, rgba(36,19,120,1) 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+body{
+    height: 100%;
+    color: white !important;
+    background-color: transparent  !important;
+}
+
+a:link{text-decoration:none; color:#ffffff;}
+a:visited{text-decoration:none; color:#ffffff;}
+a:hover{text-decoration:none; color:#b2a2c7;}
+
+  h2{
+    font-family: 'Kaushan Script', cursive;
+  }
+
+  a{
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .footer-my{
+    background: rgb(53,0,56);
+    background: linear-gradient(180deg, rgba(53,0,56,1) 0%, rgba(84,33,179,1) 0%, rgba(48,19,119,1) 100%, rgba(36,19,120,1) 100%);
+    height: 7vh;
+    padding: .5rem 1rem;
+    padding-top: 2vh;
+  }
+
+  .content-text-container{
+    margin-top: -10%;
+  }
+
+  .content-text-header{
+      font-family: 'Kaushan Script', cursive;
+  }
+
+  .content-text{
+      max-width: 450px;
+  }
+
+  .cyan-text{
+      color:aqua;
+  }
+
+  .h1, h1 {
+    font-size: 4.5rem !important;
+}
+
+.small-title-text{
+    font-family: 'Indie Flower', cursive;
+    margin-left: 15%;
+    margin-top: -2%;
+    font-size: 11.5pt;
+}
+
+img{margin-top:40px}
