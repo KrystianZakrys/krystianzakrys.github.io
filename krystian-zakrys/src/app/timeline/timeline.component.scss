@@ -1,0 +1,48 @@
+body { font-family: Helvetica; }
+
+$border-width: 8px dotted;
+
+div {
+  margin: auto;
+}
+
+.timeline-item {
+
+  border-top: $border-width;
+  border-color: #341D6A !important;//431e8c
+  margin:0;
+  padding: 24px 30px;
+  margin-top: -8px;
+}
+
+
+
+.timeline-item:nth-child(even) {
+  border-left: $border-width;
+  border-bottom: $border-width;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  border-right: $border-width;
+  border-bottom: $border-width;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
+}
+
+.timeline-item:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+.timeline-item:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+  border-bottom: 0px;
+}

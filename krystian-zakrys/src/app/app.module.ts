@@ -14,6 +14,7 @@ import { TechStackComponent } from './tech-stack/tech-stack.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsCarouselleComponent } from './projects-carouselle/projects-carouselle.component';
 import { FooterComponent } from './footer/footer.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     TechStackComponent,
     ContactMeComponent,
     ProjectsCarouselleComponent,
-    FooterComponent
+    FooterComponent,
+    SocialMediaComponent
   ],
   imports: [
     BrowserModule,

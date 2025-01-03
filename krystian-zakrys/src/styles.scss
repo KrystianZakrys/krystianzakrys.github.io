@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+$bg-color: #09060e;
+
 body{
-  background-color: #120c1d;
+  background-color: $bg-color;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background: rgb(48, 48, 48);
-  //background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(97,11,136,0.2) 35%, rgba(52,5,133,0.2) 100%);
-}
 .grid-item {
-  background-color:#1f1432;
+  background-color:#170f24;
   border-radius: 1.2em;
   padding: 2em;
 }
@@ -74,6 +73,11 @@ body{
   background: #1f1432;
   background-image: linear-gradient(to left top, #1f1432, #251844);
 }
+.grid-item-gradient-light-50-leftTop{
+  background: #1f1432;
+  background-image: linear-gradient(to left top, #1f1432, #351d6d);
+}
+
 
 //
 
@@ -119,80 +123,82 @@ body {
 }
 
 
-.timeline > div.timeline-item {
-  font-size: 0.9em;
-  line-height: 1.75em;
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, #09d1f5 0%, #0b3ad4 100%);
-  border-image-slice: 1;
-  border-radius: 50%;
-  border-width: 5px;
-  margin: 0;
-  padding: 20px;
-  counter-increment: section;
-  position: relative;
+// .timeline > div.timeline-item {
+//   font-size: 0.9em;
+//   line-height: 1.75em;
+//   border-top: 3px solid;
+//   border-image: linear-gradient(to right, #771cff 0%, #ff1ff0 100%);
+//   border-image-slice: 1;
+//   border-radius: 50%;
+//   border-width: 5px;
+//   margin: 0;
+//   padding: 20px;
+//   counter-increment: section;
+//   position: relative;
 
-  //numbers
-  .timeline > &:before {
-    content: counter(section);
-    position: absolute;
-    border-radius: 50%;
-    padding: 10px;
-    height: 1.25em;
-    width: 1.25em;
-    background-color: $black;
-    text-align: center;
-    line-height: 1em;
-    color: $white;
-    font-size: 0.9em;
-  }
-}
-//odd number borders
-.timeline > div.timeline-item:nth-child(odd) {
-  border-right: 5px solid;
-  padding-left: 0;
-  border-radius: 50%;
-  &:before {
-    left: 100%;
-    margin-left: -20px;
-  }
-}
-//even number borders
-.timeline > div.timeline-item:nth-child(even) {
-  border-left: 5px solid;
-  padding-right: 0;
-  border-radius: 50%;
-  &:before {
-    right: 100%;
-    margin-right: -20px;
-  }
-}
-//handle first and last
-.timeline > div.timeline-item:first-child {
-  border-top: 0;
-  border-top-right-radius:50%;
-  border-top-left-radius:50%;
-}
-.timeline > div.timeline-item:last-child {
-  border-bottom-right-radius:50%;
-  border-bottom-left-radius:50%;
-}
+//   //numbers
+//   .timeline > &:before {
+//     content: counter(section);
+//     position: absolute;
+//     border-radius: 50%;
+//     padding: 10px;
+//     height: 1.25em;
+//     width: 1.25em;
+//     background-color: $black;
+//     text-align: center;
+//     line-height: 1em;
+//     color: $white;
+//     font-size: 0.9em;
+//   }
+// }
+// //odd number borders
+// .timeline > div.timeline-item:nth-child(odd) {
+//   border-right: 5px solid;
+//   padding-left: 0;
+//   border-radius: 50%;
+//   &:before {
+//     left: 100%;
+//     margin-left: -20px;
+//   }
+// }
+// //even number borders
+// .timeline > div.timeline-item:nth-child(even) {
+//   border-left: 5px solid;
+//   padding-right: 0;
+//   border-radius: 50%;
+//   &:before {
+//     right: 100%;
+//     margin-right: -20px;
+//   }
+// }
+// //handle first and last
+// .timeline > div.timeline-item:first-child {
+//   border-top: 0;
+//   border-top-right-radius:50%;
+//   border-top-left-radius:50%;
+// }
+// .timeline > div.timeline-item:last-child {
+//   border-bottom-right-radius:50%;
+//   border-bottom-left-radius:50%;
+// }
 
 
 .timeline-link{
-  background-image: linear-gradient(to right, #09d1f5 0%, #117bf5 100%);
-  color: transparent;
-  background-clip: text;
+  //background-image: linear-gradient(to right, #da09f5 0%, #5511f5 100%);
+  color: $white; //transparent
+  font-weight: bold;
+  text-decoration: none;
+//  background-clip: text;
 }
 
 .timeline-time{
-  background-image: linear-gradient(to right, #09d1f5 0%, #2682fa 100%);
-  color: transparent;
-  background-clip: text;
+  //background-image:  #ffffff 40%;
+  color: rgba(255, 255, 255, 0.6); //transparent;
+  //background-clip: text;
 }
 
 .timeline-text {
-  opacity: 75%;
+  opacity: 90%;
 }
 .icon-bg{
   position: relative;
@@ -211,7 +217,7 @@ body {
   transform: translateY(-50%);
   width: 200px;
   height: 200px;
-  background-image: url(./assets/icon-bg.png);
+  //background-image: url(./assets/icon-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
