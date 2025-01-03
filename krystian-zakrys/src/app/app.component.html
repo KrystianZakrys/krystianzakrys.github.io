@@ -1,15 +1,74 @@
-<div class="mx-5">
-  <h2 class="fs-2">👋🏼 I'am Krystian Zakryś</h2>
-  <p>I specialize in .NET technology, and my experience with Angular allows me to create dynamic, responsive user interfaces. I also hold Azure DevOps Expert and Azure Solutions Architect Expert certifications, showcasing my expertise in cloud solutions and DevOps practices. If you're looking for a developer who combines solid backend skills with innovative cloud solutions, you're in the right place!</p>
+<div class="container mx-auto">
+  <div class="row w-100">
+    <app-header></app-header>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 col-12 p-2">
+      <div class="grid-item grid-item-gradient-light-leftTop" style="height:350px;">
+        <app-hello></app-hello>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 p-2">
+      <div class="grid-item grid-item-photo2" style="height:350px;">
+      </div>
+    </div>
+    <div class="col-md-4 col-12 p-2">
+      <div class="grid-item grid-item-gradient-hard-topBottom" style="height:350px;">
+        <app-yo-exp symbol="+" [number]="7" text="years of experience" icon="✨"></app-yo-exp>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-9 col-12 p-2">
+      <div class="grid-item grid-item-gradient-light-50-bottomTop" style="height: 400px;">
+        <app-skills></app-skills>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 p-2">
+      <div class="grid-item grid-item-photo1" style="height: 400px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="row pt-2">
+    <div class="col-md-4 col-12 p-2">
+      <div class="grid-item  grid-item-gradient-hard-rightBottom">
+        <app-yo-exp-small symbol="" [number]="8" text="commercial projects" icon="💸"></app-yo-exp-small>
+        <app-yo-exp-small symbol="" [number]="4" text="satisfied clients" icon="🤩"></app-yo-exp-small>
+      </div>
+      <div class="grid-item grid-item-gradient-light-topBottom mt-3">
+        <h4>Catch me on:</h4>
+        <p><a href="#">Hashnode</a></p>
+        <p><a href="#">likedin</a></p>
+        <p><a href="#">Hashnode</a></p>
+        <p><a href="#">likedin</a></p>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-12 p-2">
+      <div class="grid-item grid-item-gradient-light-rightTop">
+        <app-timeline></app-timeline>
+      </div>
+    </div>
+  </div>
+
+  <div class="row pt-2">
+    <div class="col-md-8 col-12 p-2">
+      <div class="grid-item">
+        <app-projects-carouselle></app-projects-carouselle>
+      </div>
+    </div>
+    <div class="col-md-4 col-12 p-2">
+      <div class="grid-item grid-item-gradient-light-50-leftBottom">
+        <app-contact-me></app-contact-me>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="m-5">
-  <section id="skills">
-    <h2 class="fs-2">My skills</h2>
-    <div>
-      <p>
-        jakis skill
-      </p>
-    </div>
-  </section>
-</div>
+<footer class="text-center mt-5">
+  <hr>
+  <app-footer></app-footer>
+</footer>
