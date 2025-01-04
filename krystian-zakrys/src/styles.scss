@@ -1,13 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 $bg-color: #09060e;
+$bg-color-grid-item: #170f24;
+
+$gradient-light-color1: #0b0913;
+$gradient-light-color2: #110930;
+
+$gradient-light-50-color1: #0c0913;
+$gradient-light-50-color2: #19034d;
+$gradient-light-50-color3: #5919b9;
+
+// $gradient-hard-color1: ;
+// $gradient-hard-color2: ;
 
 body{
   background-color: $bg-color;
+  font-family: "Fira Sans", serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .grid-item {
-  background-color:#170f24;
+  background-color:$bg-color-grid-item;
   border-radius: 1.2em;
   padding: 2em;
 }
@@ -24,90 +38,71 @@ body{
 }
 
 .grid-item-gradient-light-rightBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to right bottom, #1f1432, #251844);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to right bottom, $gradient-light-color1, $gradient-light-color2);
 }
 .grid-item-gradient-light-50-rightBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to right bottom, #1f1432, #351d6d);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to right bottom, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
 }
 .grid-item-gradient-light-leftBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to left bottom, #1f1432, #251844);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to left bottom, $gradient-light-color1, $gradient-light-color2);
 }
 
 .grid-item-gradient-light-50-leftBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to left bottom, #1f1432, #351d6d);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to left bottom, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
 }
 
 .grid-item-gradient-light-topBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to bottom, #1f1432, #251844);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to bottom, $gradient-light-50-color1, $gradient-light-color2);
 }
 
 .grid-item-gradient-light-bottomTop{
-  background: #1f1432;
-  background-image: linear-gradient(to top, #1f1432, #251844);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to top, $gradient-light-color1, $gradient-light-color2);
 }
 .grid-item-gradient-light-50-topBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to bottom, #1f1432, #351d6d);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to bottom, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
 }
-
+.grid-item-gradient-light-25-topBottom{
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to bottom, $gradient-light-50-color1, $gradient-light-50-color2);
+}
 .grid-item-gradient-light-50-bottomTop{
-  background: #1f1432;
-  background-image: linear-gradient(to top, #1f1432, #351d6d);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to top, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
 }
 
 .grid-item-gradient-light-rightTop{
-  background: #1f1432;
-  background-image: linear-gradient(to right top, #1f1432, #251844);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to right top, $gradient-light-color1, $gradient-light-color2);
 }
 
 .grid-item-gradient-light-50-rightTop{
-  background: #1f1432;
-  background-image: linear-gradient(to right top, #1f1432, #351d6d);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to right top, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
 }
 .grid-item-gradient-light-leftTop{
-  background: #1f1432;
-  background-image: linear-gradient(to left top, #1f1432, #251844);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to left top, $gradient-light-color1, $gradient-light-color2);
 }
 .grid-item-gradient-light-50-leftTop{
-  background: #1f1432;
-  background-image: linear-gradient(to left top, #1f1432, #351d6d);
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to left top, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
 }
 
-
-//
-
-.grid-item-gradient-hard-rightBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to right bottom, #1f1432, #2a194c, #351d67, #402184, #4b24a2);
-}
-.grid-item-gradient-hard-leftBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to left bottom, #1f1432, #2a194c, #351d67, #402184, #4b24a2);
+.grid-item-gradient-light-25-leftTop{
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to left top, $gradient-light-50-color1, $gradient-light-50-color2);
 }
 
-.grid-item-gradient-hard-topBottom{
-  background: #1f1432;
-  background-image: linear-gradient(to bottom, #1f1432, #2a194c, #351d67, #402184, #4b24a2);
-}
-
-.grid-item-gradient-hard-bottomTop{
-  background: #1f1432;
-  background-image: linear-gradient(to top, #1f1432, #2a194c, #351d67, #402184, #4b24a2);
-}
-
-
-.grid-item-gradient-hard-rightTop{
-  background: #1f1432;
-  background-image: linear-gradient(to right top, #1f1432, #2a194c, #351d67, #402184, #4b24a2);
-}
-.grid-item-gradient-hard-leftTop{
-  background: #1f1432;
-  background-image: linear-gradient(to left top, #1f1432, #2a194c, #351d67, #402184, #4b24a2);
+.grid-item-gradient-light-25-rightTop{
+  background: $gradient-light-color1;
+  background-image: linear-gradient(to right top, $gradient-light-50-color1, $gradient-light-50-color2);
 }
 
 //Text Styles
@@ -203,22 +198,22 @@ body {
 .icon-bg{
   position: relative;
   z-index: 5;
+  font-size: 61pt;
 }
 
 .icon-container{
   z-index: 1;
 }
 
-.icon-bg::after {
-  content: "";
+.icon-bg::before {
+  content: '';
   position: absolute;
-  left: 10%;
-  top: 58%;
-  transform: translateY(-50%);
-  width: 200px;
-  height: 200px;
-  //background-image: url(./assets/icon-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7rem;
+  height: 7rem;
+  background-color: rgba(102, 37, 180, 0.20);
+  border-radius: 50%;
+  z-index: 2;
 }
