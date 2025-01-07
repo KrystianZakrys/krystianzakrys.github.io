@@ -15,6 +15,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsCarouselleComponent } from './projects-carouselle/projects-carouselle.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { HelloMobileComponent } from './hello-mobile/hello-mobile.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     ContactMeComponent,
     ProjectsCarouselleComponent,
     FooterComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    HelloMobileComponent
   ],
   imports: [
     BrowserModule,

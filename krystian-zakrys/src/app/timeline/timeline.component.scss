@@ -1,6 +1,6 @@
 body { font-family: Helvetica; }
 
-$border-width: 8px dotted;
+$border-width: 12px dotted ;
 
 div {
   margin: auto;
@@ -9,10 +9,10 @@ div {
 .timeline-item {
 
   border-top: $border-width;
-  border-color: #341D6A !important;//431e8c
+  border-color: #1e63daa8  !important;//431e8c
   margin:0;
   padding: 24px 30px;
-  margin-top: -8px;
+  margin-top: -12px;
 }
 
 
@@ -44,5 +44,4 @@ div {
 .timeline-item:last-child {
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
-  border-color: red !important;
 }

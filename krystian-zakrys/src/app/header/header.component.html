@@ -1,3 +1,6 @@
 <div>
-  <button type="button" class="btn btn-sm btn-outline-light float-end"><span class="px-2">🗺</span> PL</button>
+  <button type="button"
+  class="btn btn-sm btn-outline-light float-end mx-2"
+  (click)="switchViewMode()">{{ map.get(viewMode) }} </button>
+  <button type="button" class="btn btn-sm btn-outline-light float-end mx-2"><span class="px-2">🗺</span> PL</button>
 </div>
