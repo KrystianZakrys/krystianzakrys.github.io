@@ -1,6 +1,7 @@
 body { font-family: Helvetica; }
 
-$border-width: 12px dotted ;
+$border-line: 1px solid #4a3761 ;
+$border-item: 10px solid #7a58c2;
 
 div {
   margin: auto;
@@ -8,37 +9,36 @@ div {
 
 .timeline-item {
 
-  border-top: $border-width;
-  border-color: #1e63daa8  !important;//431e8c
+  border-top: $border-line;
   margin:0;
   padding: 24px 30px;
-  margin-top: -12px;
+  margin-top: -1px;
 }
 
 
 
 .timeline-item:nth-child(even) {
-  border-left: $border-width;
-  border-bottom: $border-width;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-left: $border-item;
+  border-bottom: $border-line;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
   margin-right: 30px;
   padding-right: 0;
 }
 
 .timeline-item:nth-child(odd) {
-  border-right: $border-width;
-  border-bottom: $border-width;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-right: $border-item;
+  border-bottom: $border-line;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
   margin-left: 30px;
   padding-left: 0;
 }
 
 .timeline-item:first-child {
   border-top: 0;
+  border-top-left-radius: 1em;
   border-top-right-radius:0;
-  border-top-left-radius:0;
 }
 
 .timeline-item:last-child {
