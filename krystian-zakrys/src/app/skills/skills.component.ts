@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface SkillDto {
+  name: string;
+  rating: number;
+  description: string;
+}
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -7,6 +12,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
+  skills: SkillDto[] = [
+    {
+      name: 'C#',
+      description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
+      rating: 4
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {

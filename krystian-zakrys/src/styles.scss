@@ -52,80 +52,6 @@ border: 1px solid rgba(73, 142, 232, 0.18);
   background-size: cover;
 }
 
-// .grid-item-photo2{
-//   background-image: url(./assets/photo2.jpg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-// .grid-item-gradient-light-rightBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to right bottom, $gradient-light-color1, $gradient-light-color2);
-// }
-// .grid-item-gradient-light-50-rightBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to right bottom, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
-// }
-// .grid-item-gradient-light-leftBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to left bottom, $gradient-light-color1, $gradient-light-color2);
-// }
-
-// .grid-item-gradient-light-50-leftBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to left bottom, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
-// }
-
-// .grid-item-gradient-light-topBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to bottom, $gradient-light-50-color1, $gradient-light-color2);
-// }
-
-// .grid-item-gradient-light-bottomTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to top, $gradient-light-color1, $gradient-light-color2);
-// }
-// .grid-item-gradient-light-50-topBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to bottom, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
-// }
-// .grid-item-gradient-light-25-topBottom{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to bottom, $gradient-light-50-color1, $gradient-light-50-color2);
-// }
-// .grid-item-gradient-light-50-bottomTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to top, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
-// }
-
-// .grid-item-gradient-light-rightTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to right top, $gradient-light-color1, $gradient-light-color2);
-// }
-
-// .grid-item-gradient-light-50-rightTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to right top, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
-// }
-// .grid-item-gradient-light-leftTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to left top, $gradient-light-color1, $gradient-light-color2);
-// }
-// .grid-item-gradient-light-50-leftTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to left top, $gradient-light-50-color1, $gradient-light-50-color2, $gradient-light-50-color3);
-// }
-
-// .grid-item-gradient-light-25-leftTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to left top, $gradient-light-50-color1, $gradient-light-50-color2);
-// }
-
-// .grid-item-gradient-light-25-rightTop{
-//   background: $gradient-light-color1;
-//   background-image: linear-gradient(to right top, $gradient-light-50-color1, $gradient-light-50-color2);
-// }
-
 //Text Styles
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 $font-sans: 'Open Sans', sans-serif;
@@ -138,65 +64,6 @@ body {
   font-family: $font-sans;
 }
 
-
-// .timeline > div.timeline-item {
-//   font-size: 0.9em;
-//   line-height: 1.75em;
-//   border-top: 3px solid;
-//   border-image: linear-gradient(to right, #771cff 0%, #ff1ff0 100%);
-//   border-image-slice: 1;
-//   border-radius: 50%;
-//   border-width: 5px;
-//   margin: 0;
-//   padding: 20px;
-//   counter-increment: section;
-//   position: relative;
-
-//   //numbers
-//   .timeline > &:before {
-//     content: counter(section);
-//     position: absolute;
-//     border-radius: 50%;
-//     padding: 10px;
-//     height: 1.25em;
-//     width: 1.25em;
-//     background-color: $black;
-//     text-align: center;
-//     line-height: 1em;
-//     color: $white;
-//     font-size: 0.9em;
-//   }
-// }
-// //odd number borders
-// .timeline > div.timeline-item:nth-child(odd) {
-//   border-right: 5px solid;
-//   padding-left: 0;
-//   border-radius: 50%;
-//   &:before {
-//     left: 100%;
-//     margin-left: -20px;
-//   }
-// }
-// //even number borders
-// .timeline > div.timeline-item:nth-child(even) {
-//   border-left: 5px solid;
-//   padding-right: 0;
-//   border-radius: 50%;
-//   &:before {
-//     right: 100%;
-//     margin-right: -20px;
-//   }
-// }
-// //handle first and last
-// .timeline > div.timeline-item:first-child {
-//   border-top: 0;
-//   border-top-right-radius:50%;
-//   border-top-left-radius:50%;
-// }
-// .timeline > div.timeline-item:last-child {
-//   border-bottom-right-radius:50%;
-//   border-bottom-left-radius:50%;
-// }
 
 
 .timeline-link{
@@ -226,15 +93,70 @@ body {
   z-index: 1;
 }
 
-// .icon-bg::before {
-//   content: '';
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 7rem;
-//   height: 7rem;
-//   background-color: rgba(37, 120, 180, 0.2);
-//   border-radius: 50%;
-//   z-index: 2;
-// }
+
+
+.custom-tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-tooltip-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}
+
+.custom-tooltip-btn:hover {
+  background-color: #0056b3;
+}
+
+.custom-tooltip-content {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  width: 240px;
+  background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  z-index: 1;
+  box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.custom-tooltip-container:hover .custom-tooltip-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.custom-tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #007bff;
+}
+
+.custom-tooltip-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
