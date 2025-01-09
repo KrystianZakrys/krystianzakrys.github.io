@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { HelloMobileComponent } from './hello-mobile/hello-mobile.component';
 import { HelloContactMeComponent } from './hello-contact-me/hello-contact-me.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HelloContactMeComponent } from './hello-contact-me/hello-contact-me.com
     FooterComponent,
     SocialMediaComponent,
     HelloMobileComponent,
-    HelloContactMeComponent
+    HelloContactMeComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,

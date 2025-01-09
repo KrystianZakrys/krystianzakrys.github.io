@@ -17,6 +17,31 @@ export class SkillsComponent implements OnInit {
       name: 'C#',
       description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
       rating: 4
+    },
+    {
+      name: '.NET',
+      description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
+      rating: 4
+    },
+    {
+      name: 'LINQ',
+      description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
+      rating: 4
+    },
+    {
+      name: 'SQL/ T-SQL',
+      description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
+      rating: 4
+    },
+    {
+      name: 'TypeScript',
+      description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
+      rating: 4
+    },
+    {
+      name: 'Angular',
+      description: ' Warning: Hovering too long may result in a sudden craving for cookies!',
+      rating: 4
     }
   ];
   constructor() { }

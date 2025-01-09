@@ -1,10 +1,13 @@
 <div class="text-center p-4 p-md-1 icon-container">
-  <div class="align-middle">
-    <!-- <p style="font-size: min(5vw, 45pt)" class="m-0 text-center icon-bg">{{icon}}</p>
-    <h1 style="font-size: min(4vw, 40pt);">{{symbol + number}}</h1>
-    <h5 style="font-size: min(1vw, 20pt);">{{text}}</h5> -->
-
+  <div class="align-middle d-none d-md-block">
     <p class="m-0 fs-1 text-center icon-bg">{{icon}}</p>
+    <h1 class="fs-1">{{symbol + number}}</h1>
+    <h5 class="fs-5 d-block d-lg-block d-md-none">{{text}}</h5>
+    <p class="fs-6  text-center d-none d-lg-none d-md-block">{{text}}</p>
+  </div>
+
+  <div class="align-middle d-block d-md-none">
+    <p class="m-0 text-center icon-bg" style="font-size: 36pt;">{{icon}}</p>
     <h1 class="fs-1">{{symbol + number}}</h1>
     <h5 class="fs-5 d-block d-lg-block d-md-none">{{text}}</h5>
     <p class="fs-6  text-center d-none d-lg-none d-md-block">{{text}}</p>

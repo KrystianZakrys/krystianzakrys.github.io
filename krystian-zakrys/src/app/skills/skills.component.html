@@ -2,16 +2,16 @@
   <h2 class="fs-2">⚡ My skills</h2>
   <div class="m-2 my-4">
     <div class="skill-container" *ngFor="let skill of skills">
-      <button class="skill-btn">{{ skill.name }}</button>
+      <button class="skill-btn btn btn-outline-light">{{ skill.name }}</button>
       <div class="skill-content">
         <span class="skill-arrow"></span>
         <p class="skill-text">
           {{ skill.description }}
         </p>
         <p class="skill-text">
-          <span class="fw-light">How I feel about this skill?:</span>
+          <span class="fw-light">How I feel about this skill?</span>
           <br/>
-          <span class="fs-4">⭐ {{skill.rating }} / 5</span>
+          <span class="fs-4 fw-bold">⭐ {{skill.rating }} / 5</span>
         </p>
       </div>
     </div>
