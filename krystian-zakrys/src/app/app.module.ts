@@ -18,6 +18,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
 import { HelloMobileComponent } from './hello-mobile/hello-mobile.component';
 import { HelloContactMeComponent } from './hello-contact-me/hello-contact-me.component';
 import { CertificatesComponent } from './certificates/certificates.component';
+import { ToolsComponent } from './tools/tools.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CertificatesComponent } from './certificates/certificates.component';
     SocialMediaComponent,
     HelloMobileComponent,
     HelloContactMeComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,

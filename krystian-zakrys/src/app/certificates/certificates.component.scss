@@ -21,3 +21,11 @@
   right: 0%;
   font-size: xx-small;
 }
+
+.bg-card{
+  position: absolute;
+  height: 99%;
+  width: 65%;
+  left: 50%;
+  translate: translateX(50%);
+}
