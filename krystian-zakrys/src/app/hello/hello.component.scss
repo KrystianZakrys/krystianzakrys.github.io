@@ -19,9 +19,9 @@
 
   -webkit-box-shadow:0px 0px 118px 47px rgba(17,113,191,0.51);
   -moz-box-shadow: 0px 0px 118px 47px rgba(17,113,191,0.51);
-  box-shadow: 0px 0px 118px 47px rgba(17, 113, 191, 0.51);
 
-  background:rgba(17,75,191,0.45);
+  box-shadow: 0px 0px 118px 47px rgb(88 17 191 / 51%);
+  background: rgb(72 17 191 / 45%);
 }
 
 .image-1 {
@@ -303,7 +303,10 @@ https://ryanmulligan.dev/blog/css-property-new-style/
   display: block;
   height: 100%;
   padding-left: 6px;
-  color: #b668ff;
+  font-weight: bold;
+  background: -webkit-linear-gradient(120deg, #FC466B, #3F5EFB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: spin_4991 10s infinite;
 }
 

@@ -1,7 +1,10 @@
-<div class="text-center p-4 p-md-1 icon-container">
+<div class="text-center icon-container">
   <div class="align-middle d-none d-md-block">
-    <p class="m-0 fs-1 text-center icon-bg">{{icon}}</p>
-    <h1 class="fs-1">{{symbol + number}}</h1>
+    <!-- <p class="m-0 fs-1 text-center icon-bg">{{icon}}</p> -->
+    <img [src]="icon" width="100%" class="mt-0 mb-0 pb-4 text-white icon-bg">
+    <h1 class="number-text">{{symbol + number}}</h1>
+
+
     <h5 class="fs-5 d-block d-lg-block d-md-none">{{text}}</h5>
     <p class="fs-6  text-center d-none d-lg-none d-md-block">{{text}}</p>
   </div>
