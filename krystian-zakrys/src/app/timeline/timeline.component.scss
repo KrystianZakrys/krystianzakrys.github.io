@@ -24,6 +24,7 @@ div {
   border-bottom-left-radius: 1em;
   margin-right: 30px;
   padding-right: 0;
+  background: linear-gradient(45deg, #b668ff34 1%, transparent 32%);
 }
 
 .timeline-item:nth-child(odd) {
@@ -33,6 +34,7 @@ div {
   border-bottom-right-radius: 1em;
   margin-left: 30px;
   padding-left: 0;
+  background: linear-gradient(-45deg, #b668ff34 1%, transparent 32%);
 }
 
 .timeline-item:first-child {
