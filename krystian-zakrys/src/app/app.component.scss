@@ -1,0 +1,8 @@
+.tools-container{
+  opacity: 1;
+  transform: rotate(-6deg);
+  transform:  skew(-10deg, 5deg);
+  background-image:  linear-gradient(#7958ffa8 1.4000000000000001px, transparent 1.4000000000000001px), linear-gradient(to right, #7958ffb0 1.4000000000000001px, #ffffff00 1.4000000000000001px);
+  background-size: 45px 45px;
+  mask-image: radial-gradient(ellipse at center, hsl(0, 0%, 100%) 15%, hsla(0, 0%, 0%, 0) 75%);
+  }

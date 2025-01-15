@@ -8,6 +8,12 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="hello-container text-white">
   <div class="p-md-5 p-sm-1 pt-1 pt-lg-1">
@@ -15,3 +21,106 @@
   </div>
 </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+     const swiperEl = document.querySelector('swiper-container');
+
+      swiperEl.addEventListener('swiperprogress', (event) => {
+        const [swiper, progress] = event.detail;
+      });
+
+      swiperEl.addEventListener('swiperslidechange', (event) => {
+        console.log(event.srcElement.swiper);
+        const index = event.srcElement.swiper.activeIndex;
+        let prevIndex = index;
+        if(event.srcElement.swiper.swipeDirection === 'prev'){
+          prevIndex += 1;
+        } else {
+          prevIndex -= 1;
+        }
+
+        const elementIdPrefix = 'project-container-';
+        if(prevIndex < 0)
+          prevIndex = 0;
+
+        const previousProjectContainer =  document.getElementById(elementIdPrefix + prevIndex);
+        const currentProjectContainer = document.getElementById(elementIdPrefix + index);
+
+        if(previousProjectContainer !== null){
+          previousProjectContainer.classList.remove('animate__fadeIn');
+          previousProjectContainer.classList.add('animate__fadeOut');
+        }
+
+        if(currentProjectContainer !== null){
+          currentProjectContainer.classList.remove('animate__fadeOut');
+          currentProjectContainer.classList.add('animate__fadeIn');
+        }
+
+      });
+
+      var lastScrollTop = 0;
+
+      // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+      document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+
+        let skillsDiv = document.getElementById('skills');
+        let certsDiv = document.getElementById('certs');
+        const skillsDivContainer = document.getElementById('skillsContainer');
+        const certsDivContainer = document.getElementById('certsContainer');
+
+        if (st > lastScrollTop) {
+            // downscroll code
+            if(isElementInViewport(skillsDivContainer) && isElementInViewport(certsDivContainer)){
+              skillsDiv.classList.remove('animate__bounceOutLeft');
+              certsDiv.classList.remove('animate__bounceOutRight');
+              skillsDiv.classList.remove('animate__fadeOut');
+              certsDiv.classList.remove('animate__fadeOut');
+
+              skillsDiv.classList.add('animate__bounceInLeft');
+              certsDiv.classList.add('animate__bounceInRight');
+            }
+
+
+        }
+        else if (st < lastScrollTop) {
+          if(isElementBottomOutOfViewport(skillsDivContainer) && isElementBottomOutOfViewport(certsDivContainer)){
+              skillsDiv.classList.remove('animate__bounceInLeft');
+              certsDiv.classList.remove('animate__bounceInRight');
+              skillsDiv.classList.remove('animate__fadeOut');
+              certsDiv.classList.remove('animate__fadeOut');
+
+              skillsDiv.classList.add('animate__bounceOutLeft');
+              certsDiv.classList.add('animate__bounceOutRight');
+            }
+
+
+        } // else was horizontal scroll
+
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+      }, false);
+
+  });
+
+  function isElementInViewport (el) {
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 //&&
+        //rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+        //rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    );
+  }
+  function isElementBottomOutOfViewport (el) {
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.bottom >= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  </script>
