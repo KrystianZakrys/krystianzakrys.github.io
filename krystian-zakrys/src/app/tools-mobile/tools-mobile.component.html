@@ -1,0 +1,7 @@
+
+  <div class="m-1 d-flex flex-wrap">
+    <figure class="text-center" *ngFor="let tool of tools" style="width: 60px;">
+      <img [src]="tool.imageUrl" width="30">
+      <figcaption class="mx-3 mt-3 text-center" style="font-size: xx-small;">{{tool.name}}</figcaption>
+    </figure>
+  </div>

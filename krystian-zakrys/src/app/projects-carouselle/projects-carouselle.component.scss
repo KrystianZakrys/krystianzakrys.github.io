@@ -145,3 +145,11 @@ swiper-slide:nth-child(10n) {
 .Btn:active {
   transform: translate(2px ,2px);
 }
+
+.slide-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+

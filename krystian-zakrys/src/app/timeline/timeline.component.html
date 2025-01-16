@@ -1,23 +1,21 @@
 <h2 class="text-center font-weight-bold my-5 text-capitalize">Here's my timeline of experience</h2>
-<div class="timeline" style="font-size: small;">
-  <div class="timeline-item text-end">
-    <h4><span style="font-size: 24pt;"></span> Bachelor of Engineering</h4>
-    <h6 class="timeline-time">2018</h6>
-    <p class="timeline-text">Bachelor of Engineering degree in Computer Science from Bialystok University of Technology, where I developed a strong foundation in software development, algorithms, and modern IT solutions.</p>
-    <p><a href="https://wi.pb.edu.pl/en/" class="timeline-link link-light">↗ Bialystok University of Technology</a></p>
+<div class="container pt-5 mt-5 timeline-bg">
+  <div class="timeline-row-container" *ngFor="let position of positions; let i = index">
+    <div class="row animate__animated timeline-row"
+    [class.animate__bounceOutRight]="i % 2 == 0"
+    [class.animate__bounceOutLeft]="i % 2 != 0">
+      <div class="col-12 col-md-6 text-center px-3 col-with-timeline pt-5 pt-md-0">
+        <h1 *ngIf="position.date !== '2018'">{{ position.timeline }}</h1>
+        <img *ngIf="position.date === '2018'" src="../../assets/icons/graduation.png">
+        <h3 class="fw-light">{{ position.date }}</h3>
+      </div>
+      <div class="col-12 col-md-6 p-5 text-justify">
+        <div class="">
+          <h4>{{ position.title }}</h4>
+          <p class="timeline-text text-justify" >{{ position.description }}</p>
+          <p class="text-end"><a [href]="position.url" class="timeline-link link-light">↗ {{ position.urlText}}</a></p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="timeline-item text-start">
-    <h4>Fullstack Developer</h4>
-    <h6 class="timeline-time">April 2018 – August 2020 · 2 years 5 months</h6>
-    <p class="timeline-text">Fullstack Developer in the Research, Development, and Implementation of Electronic Services department, utilizing technologies like jQuery and .NET Framework.</p>
-    <p><a href="https://zeto.bialystok.pl/" class="timeline-link link-light">↗ Centrum Informatyki ZETO S.A.</a></p>
-  </div>
-  <div class="timeline-item text-end">
-    <h4>Fullstack Developer (.NET + Angular)</h4>
-    <h6 class="timeline-time">September 2020 – Present  · {{ startDate | dateDifference:endDate }}</h6>
-    <p class="timeline-text">Designed solutions for education, banking, and oil services, enhancing operations with scalable systems using microservices and Azure. Skilled in .NET for backend and Angular for responsive, dynamic frontends.</p>
-    <p><a href="https://www.altkomsoftware.com/" class="timeline-link link-light">↗ Altkom Software</a></p>
-
-  </div>
-  <br>
 </div>
