@@ -14,7 +14,7 @@
   <div class="p-md-5 p-sm-1 pt-1 pt-lg-1">
     <app-root></app-root>
   </div>
-<script src="runtime.18a1d564fd7dc0eb.js" type="module"></script><script src="polyfills.9f2f12a0bb5d3188.js" type="module"></script><script src="main.873981481fb483f9.js" type="module"></script>
+<script src="runtime.18a1d564fd7dc0eb.js" type="module"></script><script src="polyfills.9f2f12a0bb5d3188.js" type="module"></script><script src="main.9cbbab47b546d058.js" type="module"></script>
 
 
 <script>
@@ -53,14 +53,16 @@
       const skillsDivContainer = document.getElementById('skillsContainer');
       const certsDivContainer = document.getElementById('certsContainer');
 
+      //timeline
+      let timelineRows = [...document.getElementsByClassName('timeline-row-container')];
+
       // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
       document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
         var st = window.pageYOffset || document.documentElement.scrollTop;
 
-
         if (st > lastScrollTop) {
             // downscroll code
-            if(isElementInViewport(skillsDivContainer) && isElementInViewport(certsDivContainer)){
+            if(isElementInViewport(skillsDivContainer) || isElementInViewport(certsDivContainer)){
               skillsDiv.classList.remove('animate__bounceOutLeft');
               certsDiv.classList.remove('animate__bounceOutRight');
               skillsDiv.classList.remove('animate__fadeOut');
@@ -70,6 +72,20 @@
               certsDiv.classList.add('animate__bounceInRight');
             }
 
+            for (let index = 0; index < timelineRows.length; index++) {
+              const element = timelineRows[index];
+              let timelineRow = element.getElementsByClassName('timeline-row')[0];
+
+              if(isElementInViewport(element)){
+                if(index % 2 == 0){
+                  timelineRow.classList.remove('animate__bounceOutRight');
+                  timelineRow.classList.add('animate__bounceInRight');
+                } else {
+                  timelineRow.classList.remove('animate__bounceOutLeft');
+                  timelineRow.classList.add('animate__bounceInLeft');
+                }
+              }
+            }
 
         }
         else if (st < lastScrollTop) {
@@ -81,6 +97,22 @@
 
               skillsDiv.classList.add('animate__bounceOutLeft');
               certsDiv.classList.add('animate__bounceOutRight');
+            }
+
+
+            for (let index = 0; index < timelineRows.length; index++) {
+              const element = timelineRows[index];
+              let timelineRow = element.getElementsByClassName('timeline-row')[0];
+
+              if(isElementBottomOutOfViewport(element)){
+                if(index % 2 == 0){
+                  timelineRow.classList.remove('animate__bounceInRight');
+                  timelineRow.classList.add('animate__bounceOutRight');
+                } else {
+                  timelineRow.classList.remove('animate__bounceInLeft');
+                  timelineRow.classList.add('animate__bounceOutLeft');
+                }
+              }
             }
 
 
