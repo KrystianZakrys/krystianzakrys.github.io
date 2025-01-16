@@ -14,7 +14,7 @@
   <div class="p-md-5 p-sm-1 pt-1 pt-lg-1">
     <app-root></app-root>
   </div>
-<script src="runtime.18a1d564fd7dc0eb.js" type="module"></script><script src="polyfills.9f2f12a0bb5d3188.js" type="module"></script><script src="main.a96a042e5d335a5e.js" type="module"></script>
+<script src="runtime.18a1d564fd7dc0eb.js" type="module"></script><script src="polyfills.9f2f12a0bb5d3188.js" type="module"></script><script src="main.873981481fb483f9.js" type="module"></script>
 
 
 <script>
@@ -26,44 +26,37 @@
       });
 
       swiperEl.addEventListener('swiperslidechange', (event) => {
-        console.log(event.srcElement.swiper);
         const index = event.srcElement.swiper.activeIndex;
-        let prevIndex = index;
-        if(event.srcElement.swiper.swipeDirection === 'prev'){
-          prevIndex += 1;
-        } else {
-          prevIndex -= 1;
-        }
-
+        const prevIndex = event.srcElement.swiper.previousIndex;
         const elementIdPrefix = 'project-container-';
-        if(prevIndex < 0)
-          prevIndex = 0;
 
         const previousProjectContainer =  document.getElementById(elementIdPrefix + prevIndex);
         const currentProjectContainer = document.getElementById(elementIdPrefix + index);
 
         if(previousProjectContainer !== null){
-          previousProjectContainer.classList.remove('animate__fadeIn');
-          previousProjectContainer.classList.add('animate__fadeOut');
+          previousProjectContainer.classList.remove('animate__fadeInDown');
+          previousProjectContainer.classList.add('animate__fadeOutDown');
         }
 
         if(currentProjectContainer !== null){
-          currentProjectContainer.classList.remove('animate__fadeOut');
-          currentProjectContainer.classList.add('animate__fadeIn');
+          currentProjectContainer.classList.remove('animate__fadeOutDown');
+          currentProjectContainer.classList.add('animate__fadeInDown');
         }
 
       });
 
       var lastScrollTop = 0;
 
+      let skillsDiv = document.getElementById('skills');
+      let certsDiv = document.getElementById('certs');
+
+      const skillsDivContainer = document.getElementById('skillsContainer');
+      const certsDivContainer = document.getElementById('certsContainer');
+
       // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
       document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
         var st = window.pageYOffset || document.documentElement.scrollTop;
 
-        let skillsDiv = document.getElementById('skills');
-        let certsDiv = document.getElementById('certs');
-        const skillsDivContainer = document.getElementById('skillsContainer');
-        const certsDivContainer = document.getElementById('certsContainer');
 
         if (st > lastScrollTop) {
             // downscroll code
@@ -101,12 +94,8 @@
   function isElementInViewport (el) {
 
     var rect = el.getBoundingClientRect();
-
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 //&&
-        //rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-        //rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+        rect.top <= (window.innerHeight * 0.75 || document.documentElement.clientHeight * 0.75)
     );
   }
   function isElementBottomOutOfViewport (el) {
