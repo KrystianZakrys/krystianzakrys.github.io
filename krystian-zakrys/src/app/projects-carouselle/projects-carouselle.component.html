@@ -2,31 +2,36 @@
 <!-- ========================================================================== -->
 <h2 class="fs-2 my-5 text-center text-capitalize">Check out Some of the projects that I was part of</h2>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-<div class="row pt-4">
+<div class="row py-5">
   <div class="col-12 col-md-6">
-    <swiper-container class="mySwiper" (any)="slideChanged()"
+    <swiper-container class="mySwiper"
     effect="cards" pagination="true" navigation="true" style="min-height: 300px; height: 25em;">
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 4</swiper-slide>
-      <swiper-slide>Slide 5</swiper-slide>
-      <swiper-slide>Slide 6</swiper-slide>
-      <swiper-slide>Slide 7</swiper-slide>
-      <swiper-slide>Slide 8</swiper-slide>
-      <swiper-slide>Slide 9</swiper-slide>
+      <swiper-slide *ngFor="let project of projects">
+        <img [src]="project.imageUrl" width="100%">
+      </swiper-slide>
       </swiper-container>
   </div>
 <div class="col-12 col-md-6 mt-5 mt-md-0">
-  <div class="container mx-5 px-5 ">
-    <div id="project-container-0" class="animate__animated">
-      <h3 class="mb-0">Project 1</h3>
-      <h4>Tech stack</h4>
-      <p>Description of a project short...</p>
+  <div class="container mx-5 px-5 project-container w-100">
+    <div *ngFor="let project of projects; let i = index " id="{{'project-container-'+ i}}"
+      class="animate__animated project-item w-100"
+      [class.animate__fadeOutDown]="i != 0">
+      <div class="project-body">
+        <h3 class="mb-0">{{ project.title }}</h3>
+        <h5 class="fs-6 fw-lighter">{{ project.techStack }}</h5>
+        <!-- <div class="d-md-none d-sm-none d-lg-block" *ngIf="project.github !== ''">
+          <a class="Btn" [href]="project.github">
+            <div class="sign"><img src="../../assets/tools/git.svg" width="24px" class="m-1"></div>
+            <div class="text fs-6 mx-2">Repository</div>
+          </a>
+        </div> -->
+        <p>{{ project.desc }}</p>
+      </div>
+      <div class="project-footer w-100">
+        <a [href]="project.url" class="btn btn-md btn-outline-light">Checkout the project ➤</a><br/>
+        <a [href]="project.github"  *ngIf="project.github !== ''" class="btn btn-md btn-outline-secondary d-lg-none my-2">Repository</a>
+      </div>
     </div>
-    <div id="project-container-1" class="animate__animated animate__fadeOut">
-      hehe
-          </div>
   </div>
 </div>
 </div>

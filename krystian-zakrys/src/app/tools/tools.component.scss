@@ -1,36 +1,17 @@
 /* From Uiverse.io by Spacious74 */
-.tools-item {
-  background: linear-gradient(115deg, #ffffff68, #151e3e, #ffffff2d);
-  padding: 1px;
-  border-radius: 1.2rem;
-  box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-}
 
-.tools-card {
-  font-size: 1rem;
-  color: #bec4cf;
-  background: rgb(62,56,104);
-  background: radial-gradient(circle, rgb(59, 48, 109) 40%, rgba(38, 27, 64, 0.505) 100%);
-  padding: 1.1rem;
-  border-radius: 1.2rem;
-  width: fit-content;
-}
 
 .tools-s1{
-  width: 45px;
-  max-height: 45px;
+  max-height: 80px;
 }
 
 
-$animationSpeed: 10s;
+$animationSpeed: 45s;
 
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-30px * 7))}
+	100% { transform: translateX(calc(-200px * 20))}
 }
 
 @mixin white-gradient {
@@ -42,17 +23,16 @@ $animationSpeed: 10s;
   transform: rotate(6deg);
   transform:  skew(10deg, -5deg) translate(0px, 18px) ;
 	box-shadow: 0 0 20px -5px rgba(139, 67, 255, 0.125);
-	height: 100px;
+	height: 200px;
 	overflow:hidden;
 	position: relative;
-  max-width: 960px;
 
 	&::before,
 	&::after {
 		content: "";
 		height: 100px;
 		position: absolute;
-		width: 200px;
+		width:  100%;
 		z-index: 2;
 	}
 
@@ -78,3 +58,4 @@ $animationSpeed: 10s;
 		width: 200px;
 	}
 }
+

@@ -22,14 +22,14 @@ export class ProjectsCarouselleComponent implements OnInit {
       title: 'Title',
       desc: 'Description',
       github: 'urlGithub',
-      imageUrl: 'imgSrc',
+      imageUrl: '../../assets/photo2.jpg',
       techStack: ['C#','SQL'],
       url: 'url'
     }, {
-      title: 'Title',
+      title: 'Title2',
       desc: 'Description',
       github: 'urlGithub',
-      imageUrl: 'imgSrc',
+      imageUrl: '../../assets/photo2.jpg',
       techStack: ['C#','SQL'],
       url: 'url'
     },
@@ -40,9 +40,4 @@ export class ProjectsCarouselleComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-  public slideChanged(){
-    console.log('slideChange');
-  }
-
 }
