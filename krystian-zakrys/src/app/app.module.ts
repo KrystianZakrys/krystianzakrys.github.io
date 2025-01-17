@@ -19,6 +19,7 @@ import { HelloContactMeComponent } from './hello-contact-me/hello-contact-me.com
 import { CertificatesComponent } from './certificates/certificates.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ToolsMobileComponent } from './tools-mobile/tools-mobile.component';
+import { MoreFunLeverComponent } from './more-fun-lever/more-fun-lever.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ToolsMobileComponent } from './tools-mobile/tools-mobile.component';
     HelloContactMeComponent,
     CertificatesComponent,
     ToolsComponent,
-    ToolsMobileComponent
+    ToolsMobileComponent,
+    MoreFunLeverComponent
   ],
   imports: [
     BrowserModule,

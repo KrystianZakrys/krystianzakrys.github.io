@@ -1,0 +1,56 @@
+
+:root {
+  --bg-image:  url(./assets/bg.webp);
+  --bg-image-mobile: url(./assets/bg-mobile-light.webp);
+  --bg-color: #020522;
+  --color: #fff;
+  --grid-item-bg: rgba(34, 89, 179, 0.12);
+  --grid-item-color: #fff;
+
+  --cta-background: #010101dc;
+  --cta-spin-opacity: 0.5;
+
+  --footer-bg: transparent;
+  --footer-color: white;
+
+  --yo-exp-number-background: -webkit-linear-gradient(45deg, #7a58ff 40%, #c021ff 75%);
+  --yo-exp-number-text-shadow: 0px 0px 40px rgba(178, 69, 255, 0.441);
+}
+
+body[data-theme="dark"] {
+  --bg-image:  url(./assets/bg.webp);
+  --bg-image-mobile: url(./assets/bg-mobile.webp);
+  --bg-color: #020522;
+  --color: #fff;
+
+  --grid-item-bg: rgba(34, 89, 179, 0.12);
+  --grid-item-color: #fff;
+
+  --cta-background: #010101dc;
+  --cta-spin-opacity: 0.5;
+
+  --footer-bg: transparent;
+  --footer-color: white;
+
+  --yo-exp-number-background: -webkit-linear-gradient(45deg, #7a58ff 40%, #c021ff 75%);
+  --yo-exp-number-text-shadow: 0px 0px 40px rgba(178, 69, 255, 0.441);
+}
+
+body[data-theme="light"] {
+  --bg-image:  url(./assets/bg-light.webp);
+  --bg-image-mobile: url(./assets/bg-mobile-light.webp);
+  --bg-color: #ffffff;
+  --color: #000;
+
+  --grid-item-bg: rgba(73, 0, 219, 0.495);
+  --grid-item-color: #fff;
+
+  --cta-background: #8b37ccc0;
+  --cta-spin-opacity: 1;
+
+  --footer-bg:rgba(47, 0, 219, 0.532);;
+  --footer-color: #fff;
+
+  --yo-exp-number-background: -webkit-linear-gradient(45deg, #4d4dff 25%, #fff 50%, #9900ff 75%);
+  --yo-exp-number-text-shadow: 0px 0px 40px rgb(189, 186, 255);
+}
