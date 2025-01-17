@@ -14,11 +14,16 @@
 />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
-<body class="hello-container" data-theme="light"><app-root></app-root></body>
+<body class="hello-container" data-theme="dark"><app-root></app-root></body>
 </html>
 
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
+    if(localStorage.getItem('lang') === null || localStorage.getItem('lang') === undefined){
+      localStorage.setItem('lang', 'en');
+    }
+
+
      const swiperEl = document.querySelector('swiper-container');
 
       swiperEl.addEventListener('swiperprogress', (event) => {
@@ -145,6 +150,14 @@
     } else {
       document.body.setAttribute("data-theme", "dark");
     }
+}
+function switchLanguage() {
+  if(localStorage.getItem('lang') === 'en'){
+    localStorage.setItem('lang', 'pl');
+  } else {
+    localStorage.setItem('lang', 'en');
+  }
+  console.log('changed language');
 }
 
   </script>

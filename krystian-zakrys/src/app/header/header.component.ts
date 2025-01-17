@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get isEnglish() {
+    return localStorage.getItem('lang') === 'en';
+  }
+
 }

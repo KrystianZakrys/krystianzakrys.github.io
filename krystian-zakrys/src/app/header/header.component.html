@@ -3,7 +3,7 @@
   class="btn btn-sm btn-outline-light float-end mx-2 btn-theme"
   onclick="setLightTheme()">Light</button>-->
   <label class="switch float-end" onchange="switchTheme()">
-    <input type="checkbox">
+    <input type="checkbox" checked>
     <span class="slider">
       <span class="circle">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="sun">
@@ -26,5 +26,16 @@
       </span>
     </span>
   </label>
-  <button type="button" class="btn-language float-end mx-2"><span class="px-2">🗺</span> PL</button>
+
+  <label class="switch float-start" onchange="switchLanguage()">
+    <input type="checkbox" [checked]="isEnglish">
+    <span class="slider">
+      <span class="circle">
+       <span  class="pl" style="margin-left: 5px;">pl</span>
+        <span class="en" style="margin-right: 5px;">en</span>
+      </span>
+    </span>
+  </label>
+
+  <!-- <button type="button" class="btn-language float-start mx-2"><span class="px-2">🗺</span> PL</button> -->
 </div>

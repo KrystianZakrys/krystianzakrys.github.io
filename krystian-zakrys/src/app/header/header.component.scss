@@ -33,15 +33,34 @@
   width: 100%;
 }
 
-.circle svg.sun {
+.slider .pl{
+  position: absolute;
+  height: auto;
+  color: var(--svg-color);
+  transition: var(--total_transition_duration) ease;
+  width: 100%;
+}
+
+.circle .sun {
   transform: scale(1);
   color: var(--sun-color);
 }
 
-.circle svg.moon {
+.circle .moon {
   transform: scale(0);
   color: var(--moon-color);
   width: calc(100% - 2px);
+}
+
+.circle .pl {
+  transform: scale(1);
+  color: var(--sun-color);
+}
+
+.circle .en {
+  transform: scale(0);
+  color: var(--moon-color);
+  width: calc(100% - 5px);
 }
 
 .slider {
@@ -116,10 +135,12 @@ transition of gradients otherwise there is no way :\ */
   transform: scale(1) rotate(var(--circle_rotation));
 }
 
-.btn-language {
-  color: var(--color);
-  background: transparent;
-  border: 1px solid var(--color);
-  padding-left: 1em;
-  padding-right: 1em;
+.switch input:checked+.slider .pl {
+  transform: scale(0) rotate(var(--circle_rotation));
 }
+
+.switch input:checked+.slider .en {
+  transform: scale(1) rotate(var(--circle_rotation));
+}
+
+

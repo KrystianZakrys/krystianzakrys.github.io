@@ -1,4 +1,4 @@
-body { font-family: Helvetica; }
+@import '../../app-theming.scss';
 
 $border-line: 1px solid #677784 ;
 $border-item: 5px solid #b668ffb2;
@@ -124,4 +124,8 @@ div {
 }
 .timeline-bg{
   position: relative;
+}
+
+.timeline-link {
+  color: var(--timeline-link-color);
 }
