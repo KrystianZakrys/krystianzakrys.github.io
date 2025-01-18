@@ -23,18 +23,14 @@
 
 .words {
   overflow: hidden;
+  mask-image: linear-gradient(transparent 0%, #fff 20%, #fff 50%, #ffffff00 99%, #00000000 100%);
+
   position: relative;
 }
 .words::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    var(--bg-color) 10%,
-    transparent 30%,
-    transparent 70%,
-    var(--bg-color) 90%
-  );
   z-index: 20;
 }
 
