@@ -8,8 +8,8 @@
   /* switch */
   --slider_width: 2.875em;
   --slider_height: 1.5em;
-  --slider_light_bg: linear-gradient(90deg, #bd2af3 0%, #367bf1 100%);
-  --slider_night_bg: linear-gradient(90deg, #1701a1 0%, #af0693 75%);
+  --slider_light_bg: linear-gradient(90deg, #722bbd 0%, #3b369b 100%);
+  --slider_night_bg: linear-gradient(90deg, #170c60 0%, #350e55 75%);
   --slider_offset: calc((var(--slider_height) - var(--circle_diameter)) / 2);
   --slider_radius: calc(var(--slider_height) / 2);
   /* circle */

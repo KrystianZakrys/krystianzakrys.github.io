@@ -5,8 +5,8 @@
     [class.animate__bounceOutRight]="i % 2 == 0"
     [class.animate__bounceOutLeft]="i % 2 != 0"><!-- -->
       <div class="col-12 col-md-6 text-center px-3 col-with-timeline pt-5 pt-md-0">
-        <img *ngIf="position.iconUrl !== ''" [src]="position.iconUrl" class="m-3">
-        <h1 *ngIf="position.timeline !== ''">{{ position.timeline }}</h1>
+        <img *ngIf="position.iconUrl !== ''" [src]="position.iconUrl" class="m-3 invert-on-light">
+        <h1 *ngIf="position.timeline !== ''" class="timeline-header">{{ position.timeline }}</h1>
         <h3 class="fw-light">{{ position.date }}</h3>
       </div>
       <div class="col-12 col-md-6 p-5 text-justify">
