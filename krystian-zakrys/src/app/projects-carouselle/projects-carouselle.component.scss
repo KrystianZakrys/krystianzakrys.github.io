@@ -115,4 +115,24 @@ swiper-slide{
   object-fit: cover;
 }
 
+.btn-outline-light {
+  color: var(--btn-outline-light-color);
+  border-color: var(--btn-outline-light-color);
+}
 
+.btn-outline-light:hover{
+  background-color: var(--btn-outline-light-hoverBg);
+  color: #fff;
+}
+
+.btn-outline-secondary:hover{
+  background-color: var(--btn-outline-secondary-hoverBg);
+}
+
+.btn-outline-secondary:hover > img{
+  filter: invert(0);
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: white !important;
+}

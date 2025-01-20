@@ -1,7 +1,7 @@
 
-  <div class="m-1 d-flex flex-wrap">
+  <div class="mx-auto d-flex flex-wrap justify-content-center">
     <figure class="text-center" *ngFor="let tool of tools" style="width: 60px;">
-      <img [src]="tool.imageUrl" width="30">
+      <img [src]="tool.imageUrl" width="30" class="invert-on-light">
       <figcaption class="mx-3 mt-3 text-center" style="font-size: xx-small;">{{tool.name}}</figcaption>
     </figure>
   </div>

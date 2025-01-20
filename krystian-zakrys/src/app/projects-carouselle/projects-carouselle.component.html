@@ -19,19 +19,14 @@
       <div class="project-body">
         <h3 class="mb-0">{{ project.title }}</h3>
         <h5 class="fs-6 fw-lighter">{{ project.techStack }}</h5>
-        <!-- <div class="d-md-none d-sm-none d-lg-block" *ngIf="project.github !== ''">
-          <a class="Btn" [href]="project.github">
-            <div class="sign"><img src="../../assets/tools/git.svg" width="24px" class="m-1"></div>
-            <div class="text fs-6 mx-2">Repository</div>
-          </a>
-        </div> -->
         <p>{{ project.desc }}</p>
       </div>
       <div class="project-footer w-100">
         <a [href]="project.url" class="btn btn-md btn-outline-light w-100 mx-auto mx-lg-0">Checkout the project ➤</a><br/>
         <a [href]="project.github"  *ngIf="project.github !== ''"
          class="btn btn-md btn-outline-secondary my-2 w-100  mx-auto mx-lg-0">
-          <img src="../../assets/tools/github.svg" height="16px" style="transform: translate(0, -2px);">  Repository
+          <img src="../../assets/tools/github.svg" height="16px"
+          class="invert-on-light" style="transform: translate(0, -2px);">  Repository
         </a>
       </div>
     </div>
