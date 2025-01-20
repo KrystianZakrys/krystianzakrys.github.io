@@ -1,3 +1,5 @@
+@import '../app-theming.scss';
+
 .tools-container{
   opacity: 1;
   transform: rotate(-6deg);
@@ -6,3 +8,34 @@
   background-size: 45px 45px;
   mask-image: radial-gradient(ellipse at center, hsl(0, 0%, 100%) 15%, hsla(0, 0%, 0%, 0) 70%);
   }
+
+  .section-separator{
+    position: relative;
+
+  }
+  .section-separator hr{
+    height: 2px;
+    background-color: var(--section-separator-accent-color);
+    mask-image: linear-gradient(90deg, #ffffff00, #000, #ffffff00);
+  }
+
+
+  .section-separator:after{
+    display: block;
+    content: "";
+    background-image: radial-gradient(var(--section-separator-color), #ffffff00 60%);
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    /* -webkit-mask-image: radial-gradient(#ffffffbd, #ffffff00 80%); */
+    mask-image: linear-gradient(180deg, #ffffff00 10%, #ffffff9e 50%, #2f2f2f00 51%), radial-gradient(#ffffff1f, #ffffff1f 17%);
+  }
+
+.header{
+  padding-top: 1em;
+  background-image: linear-gradient(180deg, var(--header-bg-color), transparent);
+  height: 80px;
+}

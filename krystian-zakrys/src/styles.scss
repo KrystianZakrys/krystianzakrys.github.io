@@ -95,3 +95,13 @@ html, body {
 img.invert-on-light{
   filter: var(--image-invert);
 }
+
+@media (min-width: 1200px) {
+  body {
+    zoom: 0.75;
+  }
+}
+
+.init__animate__fadeIn{
+  opacity: 0;
+}

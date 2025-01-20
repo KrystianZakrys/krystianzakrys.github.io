@@ -61,6 +61,9 @@
       //timeline
       let timelineRows = [...document.getElementsByClassName('timeline-row-container')];
 
+      //elements to animate
+      let elementsToAnimate = [...document.getElementsByClassName('animate__animated')];
+
       // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
       document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
         var st = window.pageYOffset || document.documentElement.scrollTop;
@@ -92,6 +95,12 @@
               }
             }
 
+            for (let index = 0; index < elementsToAnimate.length; index++) {
+              if(isElementInViewport(elementsToAnimate[index])){
+                playAnimation(elementsToAnimate[index], 'in');
+              }
+            }
+
         }
         else if (st < lastScrollTop) {
           if(isElementBottomOutOfViewport(skillsDivContainer) && isElementBottomOutOfViewport(certsDivContainer)){
@@ -117,6 +126,12 @@
                   timelineRow.classList.remove('animate__bounceInLeft');
                   timelineRow.classList.add('animate__bounceOutLeft');
                 }
+              }
+            }
+
+            for (let index = 0; index < elementsToAnimate.length; index++) {
+              if(isElementBottomOutOfViewport(elementsToAnimate[index].parentElement)){
+                playAnimation(elementsToAnimate[index], 'out');
               }
             }
 
@@ -157,7 +172,36 @@ function switchLanguage() {
   } else {
     localStorage.setItem('lang', 'en');
   }
-  console.log('changed language');
 }
+
+function isValidAnimateElement(element){
+  if(!element.classList.contains('animate__animated'))
+    return false;
+
+  if(!element.hasAttribute('data-animationIn') || !element.hasAttribute('data-animationOut'))
+    return false;
+
+
+  return true;
+}
+
+function playAnimation(element, direction){
+
+  if(!isValidAnimateElement)
+    return;
+
+  let animationIn = element.getAttribute('data-animationIn');
+  let animationOut = element.getAttribute('data-animationOut');
+
+  if(direction == 'in'){
+    element.classList.remove(animationOut);
+    element.classList.add(animationIn);
+  }
+  else {
+    element.classList.remove(animationIn);
+    element.classList.add(animationOut);
+  }
+}
+
 
   </script>
