@@ -121,8 +121,6 @@
           const element = timelineRows[index];
           let timelineRow = element.getElementsByClassName('timeline-row')[0];
 
-          console.log(element, isElementBottomOutOfViewport(element));
-
           if (isElementBottomOutOfViewport(element)) {
 
             if (index % 2 == 0) {
