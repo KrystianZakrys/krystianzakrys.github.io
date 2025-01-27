@@ -3,7 +3,7 @@
 <h2 class="fs-2 my-5 text-center text-capitalize">Check out Some of the projects and products that I was part of</h2>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <div class="row py-5">
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-md-7">
     <swiper-container class="mySwiper"
     effect="cards" pagination="true" navigation="true" style="min-height: 300px; height: 25em; width: 90%;">
       <swiper-slide *ngFor="let project of projects">
@@ -11,7 +11,7 @@
       </swiper-slide>
       </swiper-container>
   </div>
-<div class="col-12 col-md-6 mt-5 mt-md-0">
+<div class="col-12 col-md-5 mt-5 mt-md-0">
   <div class="container mx-0 mx-md-5 px-md-5 p-0 px-3 project-container w-100">
     <div *ngFor="let project of projects; let i = index " id="{{'project-container-'+ i}}"
       class="animate__animated project-item w-75"

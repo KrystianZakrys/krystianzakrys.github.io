@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  /**
+   *
+   */
+  constructor() {
+  }
   title = 'krystian-zakrys';
+  isMobile() {
+    return window.innerWidth < 768;
+  }
 }

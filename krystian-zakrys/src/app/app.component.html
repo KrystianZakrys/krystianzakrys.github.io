@@ -16,8 +16,7 @@
 
 
 
-    <div class="animate__animated init__animate__fadeIn" data-animationIn="animate__fadeIn"
-    data-animationOut="animate__fadeOut">
+    <div class="animate__animated">
       <div class="my-5"></div>
       <div class="section-separator mb-5">
         <hr>
@@ -61,7 +60,8 @@
 
     <div class="my-5 competences-row">
       <div class="animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-        data-animationOut="animate__fadeOut">
+        data-animationOut="animate__fadeOut"><!--
+          [attr.data-animationOut-onTopOut]="isMobile() ? 'true': 'false'"-->
         <div class="text-center my-5 text-capitalize">
           <h2>Check out my qualifications</h2><br />
         </div>
@@ -80,8 +80,10 @@
     </div>
 
     <div class="my-5 py-5">
-      <div class="animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-        data-animationOut="animate__fadeOut" data-animationOut-onTopOut="true">
+      <div class="animate__animated row init__animate__fadeIn"
+        data-animationIn="animate__fadeIn"
+        data-animationOut="animate__fadeOut"
+        [attr.data-animationOut-onTopOut]="false">
         <div class="col-12">
           <div class="pt-1">
             <app-timeline></app-timeline>

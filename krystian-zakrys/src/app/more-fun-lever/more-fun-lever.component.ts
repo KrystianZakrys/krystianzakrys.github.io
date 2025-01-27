@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./more-fun-lever.component.scss']
 })
 export class MoreFunLeverComponent implements OnInit {
+  public _isFun: boolean = false;
 
   constructor() { }
 
@@ -13,6 +14,10 @@ export class MoreFunLeverComponent implements OnInit {
   }
 
   public switchFun(){
+    this._isFun = !this._isFun;
+  }
 
+  public get IsFun(){
+    return this._isFun;
   }
 }
