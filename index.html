@@ -7,197 +7,204 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<style>@import"https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";@import"https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700";@charset "UTF-8";:root{--animate-duration:1s;--animate-delay:1s;--animate-repeat:1}:root{--bg-image:url(bg.e1bfc7a500c0d18b.webp);--bg-image-mobile:url(bg-mobile-light.0dc01a3f01afcd51.webp);--bg-color:#020522;--color:#fff;--grid-item-bg:rgba(34, 89, 179, .12);--grid-item-color:#fff;--cta-background:#010101dc;--cta-spin-opacity:.5;--footer-bg:transparent;--footer-color:white;--yo-exp-number-background:-webkit-linear-gradient(45deg, #7a58ff 40%, #c021ff 75%);--yo-exp-number-text-shadow:0px 0px 40px rgba(178, 69, 255, .441);--timeline-link-color:#fff;--timeline-header-color:#fff;--image-invert:invert(0);--animation-fill-mode:forwards;--section-separator-color:#a66effbd;--section-separator-accent-color:#cc6eff;--header-bg-color:#020522;--light-topRight-color:#88ddffd2;--btn-outline-light-color:#f8f9fa;--btn-outline-light-hoverBg:#2e199fb6;--swiper-navigation-color:#fff;--swiper-theme-color:#fff;--swiper-pagination-color:#fff;--swiper-pagination-bullet-inactive-color:#ccc}body[data-theme=dark]{--bg-image:url(bg.e1bfc7a500c0d18b.webp);--bg-image-mobile:url(bg-mobile.f0c0235cf093b158.webp);--bg-color:#020522;--color:#fff;--grid-item-bg:rgba(34, 89, 179, .12);--grid-item-color:#fff;--cta-background:#010101dc;--cta-spin-opacity:.5;--footer-bg:transparent;--footer-color:white;--yo-exp-number-background:-webkit-linear-gradient(45deg, #7a58ff 40%, #c021ff 75%);--yo-exp-number-text-shadow:0px 0px 40px rgba(178, 69, 255, .441);--timeline-link-color:#fff;--timeline-header-color:#fff;--image-invert:invert(0);--section-separator-color:#a66effbd;--section-separator-accent-color:#cc6eff;--header-bg-color:#020522;--light-topRight-color:#88ddffd2;--btn-outline-light-color:#f8f9fa;--btn-outline-light-hoverBg:#2e199fb6}body{background-color:var(--bg-color);background-image:var(--bg-image);background-size:auto;font-family:Fira Sans,serif!important;font-optical-sizing:auto;font-style:normal;overflow-x:hidden;color:var(--color)}@media only screen and (max-width: 900px){body{background-image:var(--bg-image-mobile)}}html,body{max-width:100%;overflow-x:clip}@media (min-width: 1200px){body{zoom:.75}}</style><link rel="stylesheet" href="styles.35cbd15a3c6babeb.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.35cbd15a3c6babeb.css"></noscript></head>
-<body class="hello-container" data-theme="dark"><app-root></app-root><script src="runtime.18a1d564fd7dc0eb.js" type="module"></script><script src="polyfills.9f2f12a0bb5d3188.js" type="module"></script><script src="main.ffaf4c6a6570fb11.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>@import"https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";@import"https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700";@charset "UTF-8";:root{--animate-duration:1s;--animate-delay:1s;--animate-repeat:1}:root{--bg-image:url(bg.e1bfc7a500c0d18b.webp);--bg-image-mobile:url(bg-mobile-light.0dc01a3f01afcd51.webp);--bg-color:#020522;--color:#fff;--grid-item-bg:rgba(34, 89, 179, .12);--grid-item-color:#fff;--cta-background:#010101dc;--cta-spin-opacity:.5;--footer-bg:transparent;--footer-color:white;--yo-exp-number-background:-webkit-linear-gradient(45deg, #7a58ff 40%, #c021ff 75%);--yo-exp-number-text-shadow:0px 0px 40px rgba(178, 69, 255, .441);--timeline-link-color:#fff;--timeline-header-color:#fff;--image-invert:invert(0);--animation-fill-mode:forwards;--section-separator-color:#7c6effbd;--section-separator-accent-color:#6eadff;--header-bg-color:#020522;--light-topRight-color:#88ddffd2;--btn-outline-light-color:#f8f9fa;--btn-outline-light-hoverBg:#2e199fb6;--swiper-navigation-color:#fff;--swiper-theme-color:#fff;--swiper-pagination-color:#fff;--swiper-pagination-bullet-inactive-color:#ccc}body[data-theme=dark]{--bg-image:url(bg.e1bfc7a500c0d18b.webp);--bg-image-mobile:url(bg-mobile.f0c0235cf093b158.webp);--bg-color:#020522;--color:#fff;--grid-item-bg:rgba(34, 89, 179, .12);--grid-item-color:#fff;--cta-background:#010101dc;--cta-spin-opacity:.5;--footer-bg:transparent;--footer-color:white;--yo-exp-number-background:-webkit-linear-gradient(45deg, #7a58ff 40%, #c021ff 75%);--yo-exp-number-text-shadow:0px 0px 40px rgba(178, 69, 255, .441);--timeline-link-color:#fff;--timeline-header-color:#fff;--image-invert:invert(0);--section-separator-color:#7c6effbd;--section-separator-accent-color:#6eadff;--header-bg-color:#020522;--light-topRight-color:#88ddffd2;--btn-outline-light-color:#f8f9fa;--btn-outline-light-hoverBg:#2e199fb6}body{background-color:var(--bg-color);background-image:var(--bg-image);background-size:auto;font-family:Fira Sans,serif!important;font-optical-sizing:auto;font-style:normal;overflow-x:hidden;color:var(--color)}@media only screen and (max-width: 900px){body{background-image:var(--bg-image-mobile)}}html,body{max-width:100%;overflow-x:clip}@media (min-width: 1200px){body{zoom:.75}}</style><link rel="stylesheet" href="styles.c0d47f19190161e9.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.c0d47f19190161e9.css"></noscript></head>
+
+<body class="hello-container" data-theme="dark"><app-root></app-root><script src="runtime.18a1d564fd7dc0eb.js" type="module"></script><script src="polyfills.9f2f12a0bb5d3188.js" type="module"></script><script src="main.6b55073fe613def2.js" type="module"></script>
+
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    if(localStorage.getItem('lang') === null || localStorage.getItem('lang') === undefined){
+  document.addEventListener("DOMContentLoaded", function (event) {
+    if (localStorage.getItem('lang') === null || localStorage.getItem('lang') === undefined) {
       localStorage.setItem('lang', 'en');
     }
 
 
-     const swiperEl = document.querySelector('swiper-container');
+    const swiperEl = document.querySelector('swiper-container');
 
-      swiperEl.addEventListener('swiperprogress', (event) => {
-        const [swiper, progress] = event.detail;
-      });
+    swiperEl.addEventListener('swiperprogress', (event) => {
+      const [swiper, progress] = event.detail;
+    });
 
-      swiperEl.addEventListener('swiperslidechange', (event) => {
-        const index = event.srcElement.swiper.activeIndex;
-        const prevIndex = event.srcElement.swiper.previousIndex;
-        const elementIdPrefix = 'project-container-';
+    swiperEl.addEventListener('swiperslidechange', (event) => {
+      const index = event.srcElement.swiper.activeIndex;
+      const prevIndex = event.srcElement.swiper.previousIndex;
+      const elementIdPrefix = 'project-container-';
 
-        const previousProjectContainer =  document.getElementById(elementIdPrefix + prevIndex);
-        const currentProjectContainer = document.getElementById(elementIdPrefix + index);
+      const previousProjectContainer = document.getElementById(elementIdPrefix + prevIndex);
+      const currentProjectContainer = document.getElementById(elementIdPrefix + index);
 
-        if(previousProjectContainer !== null){
-          previousProjectContainer.classList.remove('animate__fadeInDown');
-          previousProjectContainer.classList.add('animate__fadeOutDown');
+      if (previousProjectContainer !== null) {
+        previousProjectContainer.classList.remove('animate__fadeInDown');
+        previousProjectContainer.classList.add('animate__fadeOutDown');
+      }
+
+      if (currentProjectContainer !== null) {
+        currentProjectContainer.classList.remove('animate__fadeOutDown');
+        currentProjectContainer.classList.add('animate__fadeInDown');
+      }
+
+    });
+
+    var lastScrollTop = 0;
+
+    let skillsDiv = document.getElementById('skills');
+    let certsDiv = document.getElementById('certs');
+
+    const skillsDivContainer = document.getElementById('skillsContainer');
+    const certsDivContainer = document.getElementById('certsContainer');
+
+    //timeline
+    let timelineRows = [...document.getElementsByClassName('timeline-row-container')];
+
+    //elements to animate
+    let elementsToAnimate = [...document.getElementsByClassName('animate__animated')];
+
+    // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+    document.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (st > lastScrollTop) {// downscroll code
+
+        if (isElementInViewport(skillsDivContainer) || isElementInViewport(certsDivContainer)) {
+          skillsDiv.classList.remove('animate__bounceOutLeft');
+          certsDiv.classList.remove('animate__bounceOutRight');
+          skillsDiv.classList.remove('animate__fadeOut');
+          certsDiv.classList.remove('animate__fadeOut');
+
+          skillsDiv.classList.add('animate__bounceInLeft');
+          certsDiv.classList.add('animate__bounceInRight');
         }
 
-        if(currentProjectContainer !== null){
-          currentProjectContainer.classList.remove('animate__fadeOutDown');
-          currentProjectContainer.classList.add('animate__fadeInDown');
+        for (let index = 0; index < timelineRows.length; index++) {
+          const element = timelineRows[index];
+          let timelineRow = element.getElementsByClassName('timeline-row')[0];
+
+          if (isElementInViewport(element)) {
+            if (index % 2 == 0) {
+              timelineRow.classList.remove('animate__bounceOutRight');
+              timelineRow.classList.add('animate__bounceInRight');
+            } else {
+              timelineRow.classList.remove('animate__bounceOutLeft');
+              timelineRow.classList.add('animate__bounceInLeft');
+            }
+          }
         }
 
-      });
-
-      var lastScrollTop = 0;
-
-      let skillsDiv = document.getElementById('skills');
-      let certsDiv = document.getElementById('certs');
-
-      const skillsDivContainer = document.getElementById('skillsContainer');
-      const certsDivContainer = document.getElementById('certsContainer');
-
-      //timeline
-      let timelineRows = [...document.getElementsByClassName('timeline-row-container')];
-
-      //elements to animate
-      let elementsToAnimate = [...document.getElementsByClassName('animate__animated')];
-
-      // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-      document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-        var st = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (st > lastScrollTop) {
-            // downscroll code
-            if(isElementInViewport(skillsDivContainer) || isElementInViewport(certsDivContainer)){
-              skillsDiv.classList.remove('animate__bounceOutLeft');
-              certsDiv.classList.remove('animate__bounceOutRight');
-              skillsDiv.classList.remove('animate__fadeOut');
-              certsDiv.classList.remove('animate__fadeOut');
-
-              skillsDiv.classList.add('animate__bounceInLeft');
-              certsDiv.classList.add('animate__bounceInRight');
-            }
-
-            for (let index = 0; index < timelineRows.length; index++) {
-              const element = timelineRows[index];
-              let timelineRow = element.getElementsByClassName('timeline-row')[0];
-
-              if(isElementInViewport(element)){
-                if(index % 2 == 0){
-                  timelineRow.classList.remove('animate__bounceOutRight');
-                  timelineRow.classList.add('animate__bounceInRight');
-                } else {
-                  timelineRow.classList.remove('animate__bounceOutLeft');
-                  timelineRow.classList.add('animate__bounceInLeft');
-                }
-              }
-            }
-
-            for (let index = 0; index < elementsToAnimate.length; index++) {
-              if(isElementInViewport(elementsToAnimate[index])){
-                playAnimation(elementsToAnimate[index], 'in');
-              }
-            }
-
+        for (let index = 0; index < elementsToAnimate.length; index++) {
+          if (isElementInViewport(elementsToAnimate[index])) {
+            playAnimation(elementsToAnimate[index], 'in');
+          }
         }
-        else if (st < lastScrollTop) {
-          if(isElementBottomOutOfViewport(skillsDivContainer) && isElementBottomOutOfViewport(certsDivContainer)){
-              skillsDiv.classList.remove('animate__bounceInLeft');
-              certsDiv.classList.remove('animate__bounceInRight');
-              skillsDiv.classList.remove('animate__fadeOut');
-              certsDiv.classList.remove('animate__fadeOut');
 
-              skillsDiv.classList.add('animate__bounceOutLeft');
-              certsDiv.classList.add('animate__bounceOutRight');
+      }
+      else if (st < lastScrollTop) {// upscroll code
+        if (!isElementInViewport(skillsDivContainer) && !isElementInViewport(certsDivContainer)) {
+          skillsDiv.classList.remove('animate__bounceInLeft');
+          certsDiv.classList.remove('animate__bounceInRight');
+          skillsDiv.classList.remove('animate__fadeOut');
+          certsDiv.classList.remove('animate__fadeOut');
+
+          skillsDiv.classList.add('animate__bounceOutLeft');
+          certsDiv.classList.add('animate__bounceOutRight');
+        }
+
+
+        for (let index = 0; index < timelineRows.length; index++) {
+          const element = timelineRows[index];
+          let timelineRow = element.getElementsByClassName('timeline-row')[0];
+
+          if (isElementBottomOutOfViewport(element)) {
+
+            if (index % 2 == 0) {
+              timelineRow.classList.remove('animate__bounceInRight');
+              timelineRow.classList.add('animate__bounceOutRight');
+            } else {
+              timelineRow.classList.remove('animate__bounceInLeft');
+              timelineRow.classList.add('animate__bounceOutLeft');
             }
+          }
+        }
 
-
-            for (let index = 0; index < timelineRows.length; index++) {
-              const element = timelineRows[index];
-              let timelineRow = element.getElementsByClassName('timeline-row')[0];
-
-              if(isElementBottomOutOfViewport(element)){
-                if(index % 2 == 0){
-                  timelineRow.classList.remove('animate__bounceInRight');
-                  timelineRow.classList.add('animate__bounceOutRight');
-                } else {
-                  timelineRow.classList.remove('animate__bounceInLeft');
-                  timelineRow.classList.add('animate__bounceOutLeft');
-                }
-              }
+        for (let index = 0; index < elementsToAnimate.length; index++) {
+          if (elementsToAnimate[index].hasAttribute('data-animationOut-onTopOut') &&
+            elementsToAnimate[index].getAttribute('data-animationOut-onTopOut') == 'true') {
+            if (!isElementInViewport(elementsToAnimate[index].parentElement)) {
+              playAnimation(elementsToAnimate[index], 'out');
             }
-
-            for (let index = 0; index < elementsToAnimate.length; index++) {
-              if(isElementBottomOutOfViewport(elementsToAnimate[index].parentElement)){
-                playAnimation(elementsToAnimate[index], 'out');
-              }
+          }
+          else {
+            if (!isElementInViewport(elementsToAnimate[index].parentElement)) {
+              playAnimation(elementsToAnimate[index], 'out');
             }
+          }
+        }
 
 
-        } // else was horizontal scroll
+      } // else was horizontal scroll
 
-        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-      }, false);
+      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);
 
   });
 
-  function isElementInViewport (el) {
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    var result = rect.top <= (window.innerHeight * 0.6 || document.documentElement.clientHeight * 0.6);
+    return result;
+  }
+  function isElementBottomOutOfViewport(el) {
 
     var rect = el.getBoundingClientRect();
-    return (
-        rect.top <= (window.innerHeight * 0.75 || document.documentElement.clientHeight * 0.75)
-    );
+    var result = rect.bottom >= (window.innerHeight || document.documentElement.clientHeight);
+    return result;
   }
-  function isElementBottomOutOfViewport (el) {
 
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.bottom >= (window.innerHeight || document.documentElement.clientHeight)
-    );
-  }
   function switchTheme() {
-    console.log(document.body.getAttribute('data-theme'));
-    if(document.body.getAttribute('data-theme') === 'dark'){
+    if (document.body.getAttribute('data-theme') === 'dark') {
       document.body.setAttribute("data-theme", "light");
     } else {
       document.body.setAttribute("data-theme", "dark");
     }
-}
-function switchLanguage() {
-  if(localStorage.getItem('lang') === 'en'){
-    localStorage.setItem('lang', 'pl');
-  } else {
-    localStorage.setItem('lang', 'en');
   }
-}
 
-function isValidAnimateElement(element){
-  if(!element.classList.contains('animate__animated'))
-    return false;
-
-  if(!element.hasAttribute('data-animationIn') || !element.hasAttribute('data-animationOut'))
-    return false;
-
-
-  return true;
-}
-
-function playAnimation(element, direction){
-
-  if(!isValidAnimateElement)
-    return;
-
-  let animationIn = element.getAttribute('data-animationIn');
-  let animationOut = element.getAttribute('data-animationOut');
-
-  if(direction == 'in'){
-    element.classList.remove(animationOut);
-    element.classList.add(animationIn);
+  function switchLanguage() {
+    if (localStorage.getItem('lang') === 'en') {
+      localStorage.setItem('lang', 'pl');
+    } else {
+      localStorage.setItem('lang', 'en');
+    }
   }
-  else {
-    element.classList.remove(animationIn);
-    element.classList.add(animationOut);
+
+  function isValidAnimateElement(element) {
+    if (!element.classList.contains('animate__animated'))
+      return false;
+
+    if (!element.hasAttribute('data-animationin') || !element.hasAttribute('data-animationout'))
+      return false;
+
+    return true;
   }
-}
+
+  function playAnimation(element, direction) {
+
+    if (!isValidAnimateElement)
+      return;
+
+    let animationIn = element.getAttribute('data-animationin');
+    let animationOut = element.getAttribute('data-animationout');
+
+    if (direction == 'in') {
+      element.classList.remove(animationOut);
+      element.classList.add(animationIn);
+    }
+    else {
+      element.classList.remove(animationIn);
+      element.classList.add(animationOut);
+    }
+  }
 
 
-  </script>
+</script>
 </body></html>
