@@ -16,17 +16,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="hello-container" data-theme="dark"><app-root></app-root></body>
+<body class="w-100 h-100" data-theme="dark"><app-root></app-root></body>
 
 </html>
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
-    if (localStorage.getItem('lang') === null || localStorage.getItem('lang') === undefined) {
-      localStorage.setItem('lang', 'en');
-    }
-
-
     const swiperEl = document.querySelector('swiper-container');
 
     swiperEl.addEventListener('swiperprogress', (event) => {
@@ -52,164 +47,7 @@
       }
 
     });
-
-    var lastScrollTop = 0;
-
-    let skillsDiv = document.getElementById('skills');
-    let certsDiv = document.getElementById('certs');
-
-    const skillsDivContainer = document.getElementById('skillsContainer');
-    const certsDivContainer = document.getElementById('certsContainer');
-
-    //timeline
-    let timelineRows = [...document.getElementsByClassName('timeline-row-container')];
-
-    //elements to animate
-    let elementsToAnimate = [...document.getElementsByClassName('animate__animated')];
-
-    // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-    document.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (st > lastScrollTop) {// downscroll code
-
-        if (isElementInViewport(skillsDivContainer) || isElementInViewport(certsDivContainer)) {
-          skillsDiv.classList.remove('animate__bounceOutLeft');
-          certsDiv.classList.remove('animate__bounceOutRight');
-          skillsDiv.classList.remove('animate__fadeOut');
-          certsDiv.classList.remove('animate__fadeOut');
-
-          skillsDiv.classList.add('animate__bounceInLeft');
-          certsDiv.classList.add('animate__bounceInRight');
-        }
-
-        for (let index = 0; index < timelineRows.length; index++) {
-          const element = timelineRows[index];
-          let timelineRow = element.getElementsByClassName('timeline-row')[0];
-
-          if (isElementInViewport(element)) {
-            if (index % 2 == 0) {
-              timelineRow.classList.remove('animate__bounceOutRight');
-              timelineRow.classList.add('animate__bounceInRight');
-            } else {
-              timelineRow.classList.remove('animate__bounceOutLeft');
-              timelineRow.classList.add('animate__bounceInLeft');
-            }
-          }
-        }
-
-        for (let index = 0; index < elementsToAnimate.length; index++) {
-          if (isElementInViewport(elementsToAnimate[index])) {
-            playAnimation(elementsToAnimate[index], 'in');
-          }
-        }
-
-      }
-      else if (st < lastScrollTop) {// upscroll code
-        if (!isElementInViewport(skillsDivContainer) && !isElementInViewport(certsDivContainer)) {
-          skillsDiv.classList.remove('animate__bounceInLeft');
-          certsDiv.classList.remove('animate__bounceInRight');
-          skillsDiv.classList.remove('animate__fadeOut');
-          certsDiv.classList.remove('animate__fadeOut');
-
-          skillsDiv.classList.add('animate__bounceOutLeft');
-          certsDiv.classList.add('animate__bounceOutRight');
-        }
-
-
-        for (let index = 0; index < timelineRows.length; index++) {
-          const element = timelineRows[index];
-          let timelineRow = element.getElementsByClassName('timeline-row')[0];
-
-          if (isElementBottomOutOfViewport(element)) {
-
-            if (index % 2 == 0) {
-              timelineRow.classList.remove('animate__bounceInRight');
-              timelineRow.classList.add('animate__bounceOutRight');
-            } else {
-              timelineRow.classList.remove('animate__bounceInLeft');
-              timelineRow.classList.add('animate__bounceOutLeft');
-            }
-          }
-        }
-
-        for (let index = 0; index < elementsToAnimate.length; index++) {
-          if (elementsToAnimate[index].hasAttribute('data-animationOut-onTopOut') &&
-            elementsToAnimate[index].getAttribute('data-animationOut-onTopOut') == 'true') {
-            if (!isElementInViewport(elementsToAnimate[index].parentElement)) {
-              playAnimation(elementsToAnimate[index], 'out');
-            }
-          }
-          else {
-            if (!isElementInViewport(elementsToAnimate[index].parentElement)) {
-              playAnimation(elementsToAnimate[index], 'out');
-            }
-          }
-        }
-
-
-      } // else was horizontal scroll
-
-      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-    }, false);
-
   });
-
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    var result = rect.top <= (window.innerHeight * 0.6 || document.documentElement.clientHeight * 0.6);
-    return result;
-  }
-  function isElementBottomOutOfViewport(el) {
-
-    var rect = el.getBoundingClientRect();
-    var result = rect.bottom >= (window.innerHeight || document.documentElement.clientHeight);
-    return result;
-  }
-
-  function switchTheme() {
-    if (document.body.getAttribute('data-theme') === 'dark') {
-      document.body.setAttribute("data-theme", "light");
-    } else {
-      document.body.setAttribute("data-theme", "dark");
-    }
-  }
-
-  function switchLanguage() {
-    if (localStorage.getItem('lang') === 'en') {
-      localStorage.setItem('lang', 'pl');
-    } else {
-      localStorage.setItem('lang', 'en');
-    }
-  }
-
-  function isValidAnimateElement(element) {
-    if (!element.classList.contains('animate__animated'))
-      return false;
-
-    if (!element.hasAttribute('data-animationin') || !element.hasAttribute('data-animationout'))
-      return false;
-
-    return true;
-  }
-
-  function playAnimation(element, direction) {
-
-    if (!isValidAnimateElement)
-      return;
-
-    let animationIn = element.getAttribute('data-animationin');
-    let animationOut = element.getAttribute('data-animationout');
-
-    if (direction == 'in') {
-      element.classList.remove(animationOut);
-      element.classList.add(animationIn);
-    }
-    else {
-      element.classList.remove(animationIn);
-      element.classList.add(animationOut);
-    }
-  }
 
 
 </script>

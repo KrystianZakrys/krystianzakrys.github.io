@@ -1,167 +1,161 @@
-<div class="light-topRight"></div>
-<div class="p-md-5 p-sm-1 pt-1 pt-lg-1">
-  <div class="container">
-    <div class="row mb-lg-5 px-2 px-md-0 pt-2 pt-lg-4 ">
-      <app-header class="mb-3 fixed-top header"></app-header>
-    </div>
+<div class="parent ">
+  <div class="container py-5 h-100">
+    <div class="row g-4 h-100">
+        <!-- Left Column -->
+        <div class="col-md-6 h-100">
+          <div class="row h-50  p-2">
+            <div class="div1 h-100">
+              <h3 style="font-size: 4vh;">Krystian Franciszek Zakryś</h3>
+              <h6 style="line-height: 1px; opacity: 0.75; font-size: 3vh;">Fullstack Developer</h6>
+              <p style="font-size: 2vh;" class="mb-1 mt-3">Specializing in .NET development and creating responsive interfaces with Angular. As an Azure DevOps Expert and Solutions Architect, I bring expertise in cloud solutions and DevOps practices.
+                <br/><br/>Let’s connect!</p>
+              <button class="btn btn-myOwn text-dark mt-1" [routerLink]="'https://www.linkedin.com/in/krystianzakrys/'">GET IN TOUCH</button>
+            </div>
+          </div>
+          <div class="row h-50 pt-3 pt-md-0">
+              <div class="col-12 col-md-6 p-2 d-none d-md-block" >
+                <div class="div4">
+                  <div class="linkedin-png-container">
+                    <img src="../assets/linkedin.png" class="linkedin-png">
+                  </div>
 
-    <div class="row mb-5 mb-xl-2 pb-md-5">
-      <div class="container py-2 my-5 d-lg-block d-none">
-        <app-hello></app-hello>
-      </div>
-      <div class="container py-2 my-5 d-sm-block d-lg-none">
-        <app-hello-mobile></app-hello-mobile>
-      </div>
-    </div>
-
-
-
-    <div class="animate__animated">
-      <div class="my-5"></div>
-      <div class="section-separator mb-5">
-        <hr>
-      </div>
-
-    </div>
-
-
-    <div class="pt-md-5">
-      <div class="animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-        data-animationOut="animate__fadeOut">
-        <div class="text-center mb-4 text-capitalize">
-          <h2>My stats so far</h2><br />
-        </div>
-        <div class="col-md-3 col-12 px-5 px-md-2 p-2 order-2 order-md-1">
-          <div class="grid-item pt-0 px-0">
-            <app-yo-exp symbol="" [number]="7" text="years of experience"
-              icon="../../assets/icons/exp2.png"></app-yo-exp>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 p-2">
+                  <div class="div5 text-center d-flex flex-column justify-content-center">
+                    <a href="https://github.com/KrystianZakrys" title="GitHub" class="m-2 my-3"> <img src="../assets/icons/github.svg" alt="My Github" width="30vh" height="30vh"></a>
+                    <a href="https://www.linkedin.com/in/krystianzakrys/" title="LinkedIn" class="m-2 my-3"> <img src="../assets/icons/linkedin.svg" alt="My LinkedIn" width="30vh" height="30vh"></a>
+                    <a href="https://www.instagram.com/cristian.zachris/" title="Instagram" class="m-2 my-3"> <img src="../assets/icons/instagram.svg" alt="My Instagram" width="30vh" height="30vh"></a>
+                  </div>
+              </div>
           </div>
         </div>
-        <div class="col-md-3 col-12 px-5 px-md-2 p-2 order-1 order-md-2">
-          <div class="grid-item pt-0 px-0">
-            <app-yo-exp symbol="" [number]="10" text="commercial projects"
-              icon="../../assets/icons/project2.png"></app-yo-exp>
+
+        <!-- Right Column -->
+        <div class="col-md-6 h-100">
+          <div class="row h-100">
+            <div class="col-md-6">
+              <div class="row  p-2" style="height: 60%;">
+                <div class="div2 light-card text-center p-2 text-dark" style="position: relative;">
+                  <h5>Skills</h5>
+                  <div class="mt-2 d-flex flex-wrap justify-content-center skills text-dark px-3 d-none d-xxl-block">
+                    <svg title="Jira" class="mx-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 44.169 45.988"
+                    style="fill:#7950F2;">
+                    <path  title="Jira" d="M 21.955078 0 A 1.029 1.029 0 0 0 21.292969 0.28125 A 11.988 11.988 0 0 0 18 7.9882812 A 11.982 11.982 0 0 0 21.292969 15.699219 L 22.169922 16.578125 L 23.5 17.900391 L 28.585938 22.986328 L 23.5 28.074219 L 24.292969 28.867188 A 13.886 13.886 0 0 1 28.171875 37.988281 A 11.481 11.481 0 0 1 27.880859 40.521484 L 43.292969 25.109375 A 3 3 0 0 0 43.292969 20.867188 L 22.705078 0.28125 A 1.029 1.029 0 0 0 21.955078 0 z M 16.289062 5.4550781 L 0.87695312 20.867188 A 3 3 0 0 0 0.87695312 25.109375 L 21.462891 45.699219 A 1 1 0 0 0 22.876953 45.699219 A 11.982 11.982 0 0 0 26.169922 37.992188 A 11.988 11.988 0 0 0 22.876953 30.285156 L 15.583984 22.988281 L 20.669922 17.900391 L 19.876953 17.107422 A 13.877 13.877 0 0 1 16 7.9882812 A 11.478 11.478 0 0 1 16.289062 5.4550781 z"></path>
+                  </svg>
+                  <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-0.71484,0 -1.42969,0.17969 -2.06641,0.53906l-16.84375,9.46484c-1.28906,0.72266 -2.08984,2.07813 -2.08984,3.53125v18.92969c0,1.45313 0.80078,2.80859 2.08984,3.53125l16.84375,9.46484c0.63672,0.35938 1.35156,0.53906 2.06641,0.53906c0.71484,0 1.42969,-0.17969 2.06641,-0.53906l16.84375,-9.46094c1.28906,-0.72656 2.08984,-2.08203 2.08984,-3.53516v-18.92969c0,-1.45312 -0.80078,-2.80859 -2.08984,-3.53125l-16.84375,-9.46484c-0.63672,-0.35937 -1.35156,-0.53906 -2.06641,-0.53906zM25,13c3.78125,0 7.27734,1.75391 9.54297,4.73828l-4.38281,2.53906c-1.31641,-1.44141 -3.1875,-2.27734 -5.16016,-2.27734c-3.85937,0 -7,3.14063 -7,7c0,3.85938 3.14063,7 7,7c1.97266,0 3.84375,-0.83594 5.16016,-2.27734l4.38281,2.53906c-2.26562,2.98438 -5.76172,4.73828 -9.54297,4.73828c-6.61719,0 -12,-5.38281 -12,-12c0,-6.61719 5.38281,-12 12,-12zM35,20h2v2h2v-2h2v2h2v2h-2v2h2v2h-2v2h-2v-2h-2v2h-2v-2h-2v-2h2v-2h-2v-2h2zM37,24v2h2v-2z"></path></g></g>
+</svg>
+<svg class="mx-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+<path fill="#6a1b9a" d="M44,24c0,5.694-2.381,10.831-6.2,14.481l-0.006,0.006C34.2,41.9,29.344,44,24,44 C12.956,44,4,35.044,4,24c0-5.338,2.087-10.188,5.5-13.775c0.006-0.013,0.013-0.019,0.019-0.025C13.169,6.381,18.306,4,24,4 C35.044,4,44,12.956,44,24z"></path><path fill="#7b1fa2" d="M38.375,37.862c-0.187,0.213-0.381,0.419-0.575,0.619l-0.006,0.006C34.2,41.9,29.344,44,24,44 C12.956,44,4,35.044,4,24c0-5.338,2.087-10.188,5.5-13.775c0.006-0.013,0.013-0.019,0.019-0.025c0.2-0.194,0.406-0.387,0.619-0.575 L38.375,37.862z"></path><path fill="#fff" d="M8.626,27.281c-0.236,0.004-0.463-0.091-0.625-0.262c-0.167-0.165-0.259-0.39-0.256-0.625 c-0.002-0.234,0.091-0.459,0.256-0.625c0.161-0.174,0.388-0.272,0.625-0.269c0.237-0.001,0.463,0.097,0.625,0.269 c0.169,0.164,0.263,0.39,0.262,0.625c0.002,0.236-0.093,0.462-0.262,0.625C9.087,27.188,8.861,27.283,8.626,27.281z"></path><path fill="#fff" d="M21.044,27.125h-1.638l-5.856-9.087c-0.146-0.224-0.267-0.463-0.363-0.712h-0.05 c0.056,0.519,0.077,1.041,0.062,1.562v8.237h-1.331V15.731h1.731l5.7,8.925c0.237,0.371,0.392,0.625,0.462,0.763h0.031 c-0.066-0.556-0.093-1.115-0.081-1.675v-8.012h1.331V27.125z"></path><path fill="#fff" d="M30.057,27.125h-6.056V15.731h5.775v1.206h-4.412v3.788h4.113v1.2h-4.113v3.95h4.7L30.057,27.125z"></path><path fill="#fff" d="M39.001,16.938h-3.312v10.188h-1.331V16.938h-3.275v-1.206h7.919V16.938z"></path><path fill="#f2f2f2" d="M20.326,34.875c-0.451,0.219-0.949,0.324-1.45,0.306c-0.674,0.03-1.327-0.232-1.794-0.719 c-0.459-0.514-0.701-1.186-0.675-1.875c-0.034-0.754,0.239-1.489,0.756-2.038c0.505-0.517,1.203-0.798,1.925-0.775 c0.427-0.015,0.853,0.06,1.25,0.219v0.625c-0.382-0.212-0.813-0.319-1.25-0.312c-0.557-0.016-1.094,0.213-1.469,0.625 c-0.39,0.444-0.592,1.022-0.562,1.612c-0.029,0.559,0.159,1.108,0.525,1.531c0.355,0.382,0.86,0.59,1.381,0.569 c0.48,0.013,0.954-0.109,1.369-0.35L20.326,34.875z"></path><path fill="#f2f2f2" d="M22.882,35.181c-0.503,0.016-0.989-0.187-1.331-0.556c-0.342-0.381-0.519-0.882-0.494-1.394 c-0.032-0.541,0.155-1.073,0.519-1.475c0.371-0.362,0.876-0.555,1.394-0.531c0.49-0.026,0.967,0.163,1.306,0.519 c0.332,0.4,0.5,0.912,0.469,1.431c0.026,0.527-0.156,1.043-0.506,1.438C23.89,34.989,23.395,35.197,22.882,35.181z M22.926,31.762 c-0.348-0.015-0.684,0.13-0.912,0.394c-0.24,0.31-0.36,0.696-0.338,1.088c-0.022,0.38,0.098,0.754,0.338,1.05 c0.231,0.26,0.566,0.402,0.912,0.388c0.34,0.02,0.67-0.118,0.894-0.375c0.227-0.31,0.338-0.691,0.312-1.075 c0.025-0.386-0.086-0.768-0.312-1.081C23.599,31.888,23.268,31.745,22.926,31.762z"></path><path fill="#f2f2f2" d="M27.663,31.95c-0.135-0.088-0.295-0.13-0.456-0.119c-0.256,0.009-0.49,0.145-0.625,0.363 c-0.186,0.295-0.276,0.64-0.256,0.988v1.912h-0.625v-3.75h0.625v0.781l0,0c0.069-0.242,0.205-0.459,0.394-0.625 c0.163-0.141,0.372-0.219,0.587-0.219c0.121-0.005,0.242,0.012,0.356,0.05V31.95z"></path><path fill="#f2f2f2" d="M31.326,33.375h-2.644c-0.018,0.349,0.096,0.693,0.319,0.963c0.234,0.234,0.557,0.356,0.887,0.338 c0.424-0.004,0.833-0.152,1.163-0.419v0.562c-0.386,0.255-0.844,0.38-1.306,0.356c-0.472,0.024-0.93-0.164-1.25-0.513 c-0.325-0.406-0.488-0.918-0.456-1.438c-0.022-0.52,0.154-1.03,0.494-1.425c0.313-0.362,0.772-0.564,1.25-0.55 c0.432-0.024,0.851,0.151,1.138,0.475c0.288,0.379,0.43,0.85,0.4,1.325L31.326,33.375z M30.701,32.869 c0.013-0.29-0.076-0.575-0.25-0.806c-0.173-0.196-0.426-0.302-0.688-0.288c-0.272-0.003-0.533,0.108-0.719,0.306 c-0.206,0.218-0.335,0.496-0.369,0.794L30.701,32.869z"></path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M24.92969,2.00195c-0.10987,0.0005 -0.22067,0.01869 -0.32617,0.05469l-20.93164,7.28516c-0.444,0.154 -0.72206,0.59745 -0.66406,1.06445l3.30859,27.12305c0.039,0.321 0.22867,0.60381 0.51367,0.75781l17.64844,9.5918c0.148,0.081 0.31256,0.12109 0.47656,0.12109c0.165,0 0.33147,-0.04105 0.48047,-0.12305l17.73828,-9.72266c0.282,-0.155 0.47372,-0.43686 0.51172,-0.75586l3.30664,-27.12109c0.058,-0.469 -0.22288,-0.91636 -0.67188,-1.06836l-21.06641,-7.15625c-0.105,-0.035 -0.21434,-0.05128 -0.32422,-0.05078zM25,7l13,28h-4.4375l-2.78125,-5.99219h-11.5625l-2.78125,5.99219h-4.4375zM25,16.5l-3.91992,8.5h7.83984z"></path></g></g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M43.33594,4h-36.66797c-1.47266,0 -2.66797,1.19531 -2.66797,2.66797v36.66406c0,1.47266 1.19531,2.66797 2.66797,2.66797h36.66406c1.47266,0 2.66797,-1.19531 2.66797,-2.66406v-36.66797c0,-1.47266 -1.19531,-2.66797 -2.66406,-2.66797zM27,36.18359c0,3.99609 -2.34375,5.81641 -5.76562,5.81641c-3.09375,0 -5.32422,-2.07422 -6.23437,-4l3.14453,-1.90234c0.60547,1.07422 1.52734,1.90234 2.85547,1.90234c1.26953,0 2,-0.49609 2,-2.42578v-12.57422h4zM35.67578,42c-3.54297,0 -5.55469,-1.78516 -6.67578,-4l3,-2c0.81641,1.33594 1.70703,2.61328 3.58984,2.61328c1.58203,0 2.41016,-0.78906 2.41016,-1.88281c0,-1.30469 -0.85937,-1.76953 -2.59766,-2.53125l-0.95312,-0.41016c-2.75391,-1.17187 -4.58594,-2.64062 -4.58594,-5.75c0,-2.85937 2.18359,-5.03906 5.58984,-5.03906c2.42578,0 4.16797,0.84375 5.42578,3.05469l-2.96875,1.91016c-0.65625,-1.17578 -1.35937,-1.63672 -2.45703,-1.63672c-1.11719,0 -1.82422,0.71094 -1.82422,1.63672c0,1.14453 0.70703,1.60547 2.34375,2.31641l0.95313,0.41016c3.24609,1.38672 5.07422,2.80469 5.07422,5.99219c0,3.43359 -2.69922,5.31641 -6.32422,5.31641z"></path></g></g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M45,4h-40c-0.553,0 -1,0.448 -1,1v40c0,0.552 0.447,1 1,1h40c0.553,0 1,-0.448 1,-1v-40c0,-0.552 -0.447,-1 -1,-1zM29,26.445h-5v15.555h-4v-15.555h-5v-3.445h14zM30.121,41.112v-4.158c0,0 2.271,1.712 4.996,1.712c2.725,0 2.62,-1.782 2.62,-2.026c0,-2.586 -7.721,-2.586 -7.721,-8.315c0,-7.791 11.25,-4.717 11.25,-4.717l-0.14,3.704c0,0 -1.887,-1.258 -4.018,-1.258c-2.131,0 -2.9,1.013 -2.9,2.096c0,2.795 7.791,2.516 7.791,8.141c0.001,8.664 -11.878,4.821 -11.878,4.821z"></path></g></g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M46.79297,22.08984l-18.88281,-18.88281c-0.80078,-0.80469 -1.85547,-1.20703 -2.91016,-1.20703c-1.05469,0 -2.10937,0.40234 -2.91016,1.20703l-3.73437,3.73437l4.62109,4.62109c1.53516,-0.90234 3.53516,-0.70703 4.85156,0.60938c1.31641,1.31641 1.50781,3.31641 0.60547,4.84766l4.54297,4.54297c1.53516,-0.90234 3.53516,-0.70703 4.85156,0.60938c1.5625,1.5625 1.5625,4.09375 0,5.65625c-1.5625,1.5625 -4.09375,1.5625 -5.65625,0c-1.31641,-1.31641 -1.51172,-3.31641 -0.60937,-4.85156l-4.54297,-4.54297c-0.32422,0.19141 -0.66406,0.33203 -1.01953,0.42188v12.28516c1.72266,0.44531 3,1.99609 3,3.85938c0,2.21094 -1.78906,4 -4,4c-2.21094,0 -4,-1.78906 -4,-4c0,-1.86328 1.27734,-3.41406 3,-3.85937v-12.28516c-0.66797,-0.17187 -1.30469,-0.50391 -1.82812,-1.02734c-1.31641,-1.31641 -1.50781,-3.31641 -0.60547,-4.84766l-4.625,-4.625l-13.73437,13.73438c-1.60938,1.60547 -1.60938,4.21484 0,5.82031l18.88281,18.88281c0.80078,0.80469 1.85547,1.20703 2.91016,1.20703c1.05469,0 2.10938,-0.40234 2.91016,-1.20703l18.88281,-18.88281c1.60938,-1.60547 1.60938,-4.21484 0,-5.82031z"></path></g></g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M27.99609,2c-6.14062,0.03906 -10.42578,1.05859 -13.32031,2.67578c-2.64062,1.47656 -3.97656,3.52734 -4.43359,5.61719c-0.45703,0.23047 -1.20703,0.68359 -1.86719,1.81641c-0.86328,1.46484 -1.23828,3.92969 -0.41016,7.55078c-1.23828,0.9375 -2.04297,2.32813 -2.23047,3.86719c-0.21875,1.80469 0.22656,3.75781 1.53516,5.15625c1.15234,1.23438 2.40625,1.77734 3.37109,1.98438c0.41016,0.08594 0.4375,0.02734 0.73438,0.02734c0.16016,0.85156 0.71484,2.89844 1.85547,5.14844c-0.76562,0.43359 -2.64062,1.48438 -4.94922,2.82422c-1.32812,0.76953 -2.64062,1.54688 -3.63281,2.16016c-0.5,0.30859 -0.91406,0.57422 -1.22656,0.79297c-0.16016,0.10547 -0.28906,0.19922 -0.41016,0.30078c-0.0625,0.05469 -0.12109,0.10547 -0.19141,0.1875c-0.07422,0.08203 -0.23047,0.13672 -0.28125,0.60938l-0.07812,0.67578l1.86719,4.60547h40.49609l0.15625,-0.80859c0,0 0.27734,-1.40234 0.53906,-2.98828c0.26563,-1.58984 0.54688,-3.21484 0.48047,-4.26953c-0.02734,-0.39453 -0.17187,-0.55469 -0.27734,-0.69141c-0.10156,-0.13672 -0.20312,-0.23828 -0.3125,-0.33984c-0.22266,-0.20703 -0.48047,-0.40625 -0.78516,-0.62109c-0.60156,-0.43359 -1.35937,-0.91797 -2.12109,-1.38672c-1.03125,-0.62891 -1.5,-0.88672 -2.05078,-1.20312c0.53906,-0.77344 1.25,-1.92578 2.01172,-3.80469c1.26563,-3.12891 2.40625,-7.80469 1.96875,-14.01172c-0.41797,-5.85937 -2.46094,-9.91797 -5.48828,-12.4375c-2.77344,-2.30859 -6.28906,-3.28125 -9.94531,-3.41406v-0.02344c-0.11328,0 -0.21875,0.01563 -0.32812,0.01563c-0.22656,-0.00391 -0.45312,-0.01562 -0.67578,-0.01562zM28.66797,4.01563c3.43359,0.08203 6.58984,0.95313 9,2.96094c1.30078,1.08203 2.40625,2.50391 3.23438,4.35547c-0.37109,-0.14453 -0.74609,-0.25391 -1.09766,-0.31641c-0.39844,-0.07422 -0.78516,-0.10937 -1.14453,-0.12109c-1.06641,-0.03906 -1.85547,0.125 -1.85547,0.125l0.39063,1.96094c0,0 1.09375,-0.20703 2.25,0.00391c1.15625,0.21094 2.18359,0.65625 2.58594,2.25781l0.03516,-0.00781c0.11328,0.59375 0.20313,1.22266 0.27344,1.88281c-0.15234,-0.27344 -0.29687,-0.53906 -0.46094,-0.83203c-0.51172,-0.91016 -1.01172,-1.78516 -1.01172,-1.78516l-1.73437,1c0,0 0.49609,0.86719 1.00391,1.76563c0.22656,0.40234 0.44531,0.79688 0.62891,1.13281c-0.65234,0.01953 -1.64844,-0.11719 -2.48828,-0.35937l-0.55469,1.92188c1.03906,0.30078 2.16016,0.46484 3.11328,0.4375c0.47656,-0.01562 0.91016,-0.05469 1.36328,-0.26953c0.10156,-0.05078 0.21094,-0.11328 0.31641,-0.19531c0.08984,4.92578 -0.87109,8.64844 -1.90625,11.20313c-0.80469,1.98828 -1.60156,3.19141 -2.03125,3.76953l-0.06641,-0.04687c0,0 -1.99219,3.14063 -6.51172,3.14063c-4.70312,0 -8.91406,-2.24609 -10.26953,-3.6875c-1.42187,-1.50391 -1.74219,-3.46094 -1.74219,-3.46094l-1.97656,0.29688c0,0 0.35547,2.51563 2.25781,4.53906c0.65625,0.69141 1.60547,1.39453 2.74609,2.03125c-0.53906,0.17578 -1.05469,0.48828 -1.42187,0.99219c-0.05859,0.08203 -0.09766,0.17188 -0.14453,0.25781c-2.30859,-0.13672 -3.79297,-0.89844 -4.73047,-1.64062c-0.85156,-0.67187 -1.15625,-1.17969 -1.25,-1.35156l-0.13672,-0.22266c-1.05078,-1.70312 -1.6875,-4.06641 -1.97266,-5.3125c0.49609,-0.37891 1.03516,-0.99219 1.53516,-1.99219l-1.78906,-0.89844c-0.30469,0.61328 -0.58203,0.95703 -0.79297,1.16406l-0.3125,0.05469c0,0 -0.32031,0.07031 -0.94141,-0.0625c-0.625,-0.12891 -1.46094,-0.46484 -2.32812,-1.39062c-0.80859,-0.86328 -1.16797,-2.25 -1.01172,-3.55078c0.16016,-1.30078 0.80469,-2.40625 1.73047,-2.875l0.03906,-0.01562c1.10156,-0.61719 1.77734,-0.67578 2.15625,-0.59375c0.38281,0.08594 0.61328,0.30078 0.83594,0.6875c0.44922,0.77344 0.51953,2.04688 0.51953,2.04688l0.01953,1.59375l4,-2l-0.01953,-0.64062c0,0 -0.04687,-0.97656 -0.55078,-2.41406c-0.26562,-0.74609 -0.08203,-1.80859 0.32422,-2.95703c0.40625,-1.14844 0.99609,-2.28125 1.21094,-3.41016c0.23438,-1.24219 -0.14844,-2.22656 -0.51953,-2.85547c0.38281,-0.6875 1.01563,-1.64062 2.01563,-2.64453c1.79297,-1.79687 4.65234,-3.58594 9.1875,-3.67187zM25.26953,10.80078c-1.79687,0.02344 -3.10937,0.72266 -3.91016,1.55859c-1.07031,1.12109 -1.33984,2.43359 -1.33984,2.43359l1.96094,0.41406c0,0 0.17188,-0.78125 0.82422,-1.46094c0.65234,-0.67969 1.67578,-1.30469 3.96875,-0.77344l0.45313,-1.94531c-0.70703,-0.16797 -1.35937,-0.23437 -1.95703,-0.22656zM28.94141,14.66797l-1.88281,0.66406c0,0 0.30469,0.87891 0.69531,1.88672c0.32422,0.84375 0.67969,1.65625 1.03125,2.33594c-0.42969,0.05469 -1.26172,0.01563 -2.38672,-0.47266l-0.79687,1.83594c1.48047,0.64063 2.73828,0.83984 3.75781,0.63281c0.51172,-0.10156 1.01953,-0.3125 1.35938,-0.82031c0.33984,-0.51172 0.27734,-1.26172 -0.01172,-1.74219c-0.21094,-0.34766 -0.70703,-1.50781 -1.08594,-2.48828c-0.37891,-0.97656 -0.67969,-1.83203 -0.67969,-1.83203zM35,15.96875l-2,0.0625c0,0 0.12891,3.80859 3.32813,6.70703c1.33984,1.21484 2.01172,2.01953 2.14063,2.30078c0.01953,0.03906 0.01953,0.03516 0.02734,0.04688c0,-0.01562 -0.01172,0.03125 -0.16406,0.16797c-0.21875,0.19922 -1.25,0.75781 -2.33203,1.13672c-1.08594,0.375 -2.30859,0.62891 -2.97266,0.60938c-0.24609,-0.00781 -0.22656,-0.03516 -0.19922,-0.01562c0,-0.01172 -0.00391,-0.01562 -0.00391,-0.05078c-0.01172,-0.19141 0.09766,-0.55469 0.09766,-0.55469l-1.84375,-0.75781c0,0 -0.29297,0.61328 -0.25391,1.41016c0.01953,0.39844 0.14063,0.90625 0.53125,1.32031c0.38672,0.41406 0.98438,0.63281 1.61719,0.64844c1.14063,0.03125 2.44922,-0.29687 3.67969,-0.71875c1.23047,-0.42578 2.29688,-0.89062 3.01563,-1.53516c0.29688,-0.26953 0.60156,-0.59766 0.75391,-1.07812c0.14844,-0.48047 0.06641,-1.03906 -0.14062,-1.48047c-0.42187,-0.89062 -1.22266,-1.66797 -2.60937,-2.92578c-2.58203,-2.34375 -2.67187,-5.29297 -2.67187,-5.29297zM10.37891,22.21484c0,0 -1.82031,1.53125 -1.36328,3.96875l1.96875,-0.36719c-0.26562,-1.41016 0.63672,-2.03125 0.63672,-2.03125zM28.62891,28.22266l-1.25781,1.55469c3.53906,2.875 7.78125,2.21094 7.78125,2.21094l-0.30469,-1.97656c0,0 -3.39844,0.50391 -6.21875,-1.78906zM39.25,28.33984c-1.24219,1.41016 -3.34375,1.66406 -3.34375,1.66406l0.1875,1.99219c0,0 2.78906,-0.20703 4.65625,-2.33594zM27.96484,31.73047l-1.92969,0.53906c0.34375,1.22266 1.25,2.06641 2.23828,2.51172c0.98828,0.44531 2.07422,0.58203 3.08984,0.60547c2.03516,0.03906 3.87109,-0.41406 3.87109,-0.41406l-0.46875,-1.94531c0,0 -1.65234,0.39063 -3.35937,0.35938c-0.85547,-0.01953 -1.70312,-0.15234 -2.3125,-0.42969c-0.60547,-0.27344 -0.95703,-0.60156 -1.12891,-1.22656zM37.4375,39.03125c0.32813,-0.00781 0.69141,0.0625 0.95313,0.20313c0.35547,0.18359 0.55859,0.39453 0.61719,0.88281c0.06641,0.57031 0.13672,1.61719 0.04297,2.50391c-0.04687,0.44531 -0.13672,0.85156 -0.24609,1.11328c-0.10937,0.26563 -0.21484,0.35156 -0.25391,0.37109c-0.69922,0.35156 -1.77734,0.39063 -2.67578,0.27734c-0.89844,-0.11328 -1.55859,-0.33203 -1.55859,-0.33203l-0.15625,-0.05078h-3.39062l-0.20312,0.09766c0,0 -0.99609,0.48047 -2.33984,0.96094c-1.34375,0.48047 -3.04297,0.94141 -4.22656,0.94141c-0.33203,0 -0.41797,-0.05469 -0.49219,-0.12109c-0.07422,-0.06641 -0.1875,-0.22656 -0.27734,-0.60156c-0.1875,-0.75391 -0.20312,-2.20312 -0.17187,-4.14062l0.00391,-0.07031l-0.01172,-0.0625c-0.07422,-0.65234 0.04297,-0.95703 0.15625,-1.11328c0.11719,-0.15625 0.28906,-0.26562 0.64844,-0.32812c0.71484,-0.11719 2.00781,0.17188 2.98828,0.65234l0.01563,0.00391l3.92188,1.78125h1.57422l0.27344,-0.22266c0.54297,-0.4375 1.54297,-1.12109 2.48047,-1.6875c0.46484,-0.28125 0.92188,-0.53906 1.29688,-0.72656c0.375,-0.1875 0.70703,-0.30078 0.71094,-0.30078h0.00391c0.09766,-0.01953 0.20313,-0.02734 0.31641,-0.03125zM31.17188,39.98047c0.17578,0.00391 0.35547,0.00781 0.53516,0.01172c-0.00391,0.00391 -0.00781,0.00391 -0.00781,0.00781h-0.48047zM18.76172,40.44141c0.70313,0.21094 1.44141,0.40625 2.28906,0.5c0.00781,0.10156 0.00391,0.19141 0.01563,0.29297l-0.00781,-0.12891c-0.00781,0.40625 0,0.71875 -0.00391,1.08984c-0.68359,-0.46875 -1.51562,-1.07422 -2.29297,-1.75391z"></path></g></g>
+</svg>
+<img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/7950F2/external-development-experience-through-the-native-integrations-of-azure-with-visual-studio-logo-bold-tal-revivo.png" alt="external-development-experience-through-the-native-integrations-of-azure-with-visual-studio-logo-bold-tal-revivo"/>
+<img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/7950F2/external-mongodb-a-cross-platform-document-oriented-database-program-logo-bold-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-bold-tal-revivo"/>
+<img width="40" height="40" src="https://img.icons8.com/ios-filled/50/7950F2/sql.png" alt="sql"/>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+style="fill:#7950F2;">
+<g fill="#7950f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M12.13867,7c-2.511,0 -4.36816,2.25708 -4.28516,4.70508c0.08,2.351 -0.02448,5.39786 -0.77148,7.88086c-0.748,2.491 -2.01403,4.06558 -4.08203,4.26758v2.29297c2.068,0.202 3.33403,1.77658 4.08203,4.26758c0.747,2.483 0.85048,5.52986 0.77148,7.88086c-0.083,2.448 1.77416,4.70508 4.28516,4.70508h25.72656c2.511,0 4.36816,-2.25708 4.28516,-4.70508c-0.08,-2.351 0.02353,-5.39786 0.76953,-7.88086c0.749,-2.491 2.01208,-4.06558 4.08008,-4.26758v-2.29297c-2.068,-0.202 -3.33108,-1.77658 -4.08008,-4.26758c-0.747,-2.483 -0.84953,-5.52986 -0.76953,-7.88086c0.082,-2.448 -1.77611,-4.70508 -4.28711,-4.70508zM12.13867,9h25.72461c0.733,0 1.24206,0.36583 1.53906,0.67383c0.5,0.517 0.77305,1.23289 0.74805,1.96289c-0.079,2.33 0.00451,5.69944 0.85352,8.52344c0.78,2.596 2.0073,4.04984 3.2793,4.83984c-1.271,0.79 -2.4983,2.24484 -3.2793,4.83984c-0.849,2.824 -0.93252,6.19344 -0.85352,8.52344c0.025,0.73 -0.24805,1.44489 -0.74805,1.96289c-0.297,0.308 -0.80606,0.67383 -1.53906,0.67383h-25.72461c-0.733,0 -1.24011,-0.36583 -1.53711,-0.67383c-0.5,-0.517 -0.77305,-1.23289 -0.74805,-1.96289c0.079,-2.33 -0.00647,-5.69944 -0.85547,-8.52344c-0.78,-2.595 -2.0073,-4.04984 -3.2793,-4.83984c1.272,-0.79 2.4993,-2.24484 3.2793,-4.83984c0.849,-2.824 0.93447,-6.19344 0.85547,-8.52344c-0.025,-0.73 0.24805,-1.44589 0.74805,-1.96289c0.297,-0.308 0.80411,-0.67383 1.53711,-0.67383zM17.86719,15.63281v18.73242h7.70898c2.003,0 3.66659,-0.48806 4.80859,-1.41406c1.144,-0.927 1.74805,-2.27539 1.74805,-3.90039c0,-2.454 -1.74475,-4.29861 -4.34375,-4.59961v-0.0293c1.911,-0.33 3.40234,-2.12075 3.40234,-4.09375c0,-1.395 -0.53578,-2.57602 -1.55078,-3.41602c-1.011,-0.837 -2.43147,-1.2793 -4.10547,-1.2793zM20.91992,18.08398h3.90234c2.141,0 3.32031,0.93853 3.32031,2.64453c-0.001,1.831 -1.40136,2.83984 -3.94336,2.83984h-3.2793zM20.91992,25.86328h3.875c2.8,0 4.2207,1.01281 4.2207,3.00781c0,1.993 -1.40083,3.04688 -4.04883,3.04688h-4.04687z"></path></g></g>
+</svg>
+
+<span class="badge mt-4 mx-1 text-dark">C#</span>
+<span class="badge mx-1 text-dark">.NET</span>
+<span class="badge mx-1 text-dark">ASP.NET MVC</span>
+<span class="badge mx-1 text-dark">RESTful API</span>
+<span class="badge mx-1 text-dark">Entity Framework</span>
+<span class="badge mx-1 text-dark">Angular</span>
+<span class="badge mx-1 text-dark">JavaScript</span>
+<span class="badge mx-1 text-dark">TypeScript</span>
+<span class="badge mx-1 text-dark">Git</span>
+<span class="badge mx-1 text-dark">Jenkins</span>
+<span class="badge mx-1 text-dark">MongoDB</span>
+<span class="badge mx-1 text-dark">MS SQL Server</span>
+<span class="badge mx-1 text-dark">SQL</span>
+<span class="badge mx-1 text-dark">Azure DevOps</span>
+<span class="badge mx-1 text-dark">Domain Driven Design</span>
+<span class="badge mx-1 text-dark">CQRS</span>
+<span class="badge mx-1 text-dark">Clean Architecture</span>
+<span class="badge mx-1 text-dark">Microservices</span>
+<span class="badge mx-1 text-dark">Modular Monolith</span>
+<span class="badge mx-1 text-dark">SOLID</span>
+<span class="badge mx-1 text-dark">TDD</span>
+<span class="badge mx-1 text-dark">Jira</span>
+                  </div>
+                  <div class="mt-2 d-flex flex-wrap justify-content-center skills text-dark px-3 d-block d-xxl-none">
+                      <span class="badge mx-1 text-dark">C#</span>
+                      <span class="badge mx-1 text-dark">.NET</span>
+                      <span class="badge mx-1 text-dark">ASP.NET MVC</span>
+                      <span class="badge mx-1 text-dark">RESTful API</span>
+                      <span class="badge mx-1 text-dark">Entity Framework</span>
+                      <span class="badge mx-1 text-dark">Angular</span>
+                      <span class="badge mx-1 text-dark">JavaScript</span>
+                      <span class="badge mx-1 text-dark">TypeScript</span>
+                      <span class="badge mx-1 text-dark">Git</span>
+                      <span class="badge mx-1 text-dark">Jenkins</span>
+                      <span class="badge mx-1 text-dark">MongoDB</span>
+                      <span class="badge mx-1 text-dark">MS SQL Server</span>
+                      <span class="badge mx-1 text-dark">SQL</span>
+                      <span class="badge mx-1 text-dark">Azure DevOps</span>
+                      <span class="badge mx-1 text-dark">Domain Driven Design</span>
+                      <span class="badge mx-1 text-dark">CQRS</span>
+                      <span class="badge mx-1 text-dark">Clean Architecture</span>
+                      <span class="badge mx-1 text-dark">SOLID</span>
+                      <span class="badge mx-1 text-dark">TDD</span>
+                      <span class="badge mx-1 text-dark">Jira</span>
+                  </div>
+                  <p class="text-dark w-100" style="position: absolute; bottom: 10px; left: 50%; transform: translate(-50%, 0%);"><b>... I’m eager to try new things!</b></p>
+               </div>
+              </div>
+              <div class="row p-2" style="height: 40%;">
+                <div class="div3 light-card text-center  p-2  text-dark">
+                  <h5>Certificates</h5>
+                  <div class="row mt-xxl-4">
+                  <div class="col-3 col-xxl-12 p-2 px-4"><a href="https://learn.microsoft.com/api/credentials/share/en-us/KrystianZakry-3302/1B7A2056F36101A4?sharingId=97F1767D36C2E56E">
+                    <img width="48" height="48" src="https://img.icons8.com/material-sharp/48/7950F2/certificate--v1.png" alt="certificate--v1"/>
+                  </a></div>
+                    <div class="col-9  col-xxl-12 pt-4 pt-xxl-1 text-start text-xxl-center">
+                      <a href="https://learn.microsoft.com/api/credentials/share/en-us/KrystianZakry-3302/1B7A2056F36101A4?sharingId=97F1767D36C2E56E" class="w-100 text-start myLink">Azure Solutions Architect </a>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-3 col-xxl-12 p-2 px-4"><a href="https://learn.microsoft.com/api/credentials/share/en-us/KrystianZakry-3302/5E40B9B15357EB39?sharingId=97F1767D36C2E56E">
+                      <img width="48" height="48" src="https://img.icons8.com/material-sharp/48/7950F2/certificate--v1.png" alt="certificate--v1"/>
+                    </a></div>
+                      <div class="col-9  col-xxl-12 pt-4 pt-xxl-1 text-start text-xxl-center">
+                        <a  href="https://learn.microsoft.com/api/credentials/share/en-us/KrystianZakry-3302/5E40B9B15357EB39?sharingId=97F1767D36C2E56E" class="w-100 text-start myLink">DevOps Engineer Expert</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 h-100  p-2">
+              <div class="div6 h-100">
+                <app-projects-carouselle></app-projects-carouselle>
+            </div>
+            </div>
           </div>
+
         </div>
-        <div class="col-md-3 col-12 px-5 px-md-2 p-2 order-3">
-          <div class="grid-item  pt-0 px-0">
-            <app-yo-exp symbol="" [number]="7" text="satisfied clients"
-              icon="../../assets/icons/testimonial2.png"></app-yo-exp>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 px-5 px-md-2 p-2 order-3">
-          <div class="grid-item pt-0 px-0">
-            <app-yo-exp symbol="" [number]="+4" text="Azure Certifications"
-              icon="../../assets/icons/certificate2.png"></app-yo-exp>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div class="my-5 competences-row">
-      <div class="animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-        data-animationOut="animate__fadeOut"><!--
-          [attr.data-animationOut-onTopOut]="isMobile() ? 'true': 'false'"-->
-        <div class="text-center my-5 text-capitalize">
-          <h2>Check out my qualifications</h2><br />
-        </div>
-        <div class="col-md-6  col-12 p-2" id="skillsContainer">
-          <div id="skills" class="grid-item h-100 animate__fadeOut animate__animated">
-            <app-skills></app-skills>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 p-2" id="certsContainer">
-          <div id="certs" class="grid-item certificates animate__fadeOut animate__animated">
-            <app-certificates></app-certificates>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="my-5 py-5">
-      <div class="animate__animated row init__animate__fadeIn"
-        data-animationIn="animate__fadeIn"
-        data-animationOut="animate__fadeOut"
-        [attr.data-animationOut-onTopOut]="false">
-        <div class="col-12">
-          <div class="pt-1">
-            <app-timeline></app-timeline>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 p-5 my-5">
-      <div class="animate__animated init__animate__fadeIn" data-animationIn="animate__fadeIn"
-        data-animationOut="animate__fadeOut">
-        <div class="text-center mb-5 text-capitalize">
-          <h2>Here are tools that I use</h2><br />
-        </div>
-
-        <div class="w-100 py-5 tools-container d-none d-md-block">
-          <app-tools></app-tools>
-        </div>
-
-        <div class="w-100 pb-2 d-block d-md-none">
-          <app-tools-mobile></app-tools-mobile>
-        </div>
-      </div>
-
-
-    </div>
-
-    <div class="py-5 my-5">
-      <div class="animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-      data-animationOut="animate__fadeOut">
-        <div class="col-12 p-2">
-          <div class="p-0">
-            <app-projects-carouselle class=" h-100 w-100"></app-projects-carouselle>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-5 my-5">
-      <div class=" mb-5 animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-      data-animationOut="animate__fadeOut">
-        <div class="col-md-5 col-12 p-2">
-          <div class="grid-item">
-            <h4>Catch me on:</h4>
-            <br />
-            <app-social-media></app-social-media>
-          </div>
-        </div>
-        <div class="col-md-7 col-12 p-2">
-          <div class="grid-item">
-            <app-contact-me></app-contact-me>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="animate__animated init__animate__fadeIn" data-animationIn="animate__fadeIn"
-    data-animationOut="animate__fadeOut">
-      <div class="my-5 py-5"><p><br/><br/><br/><br/></p><br/></div>
-      <div class="section-separator mt-5 mb-5">
-        <hr>
-      </div>
-
-    </div>
-
-    <div class="pt-5 my-5">
-      <div class="animate__animated row init__animate__fadeIn" data-animationIn="animate__fadeIn"
-      data-animationOut="animate__fadeOut">
-        <div class="col-12 text-center">
-          <app-more-fun-lever></app-more-fun-lever>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </div>
-<footer class="text-center mt-5">
-  <hr>
-  <app-footer></app-footer>
-</footer>
+</div>
