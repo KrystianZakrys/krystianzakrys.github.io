@@ -100,6 +100,13 @@ color: #341A81 !important;
   width: 100%;;
 }
 
+@media only screen and (min-height: 600) {
+  .linkedin-png{
+    bottom: -11vh;
+  }
+}
+
+
 .linkedin-png-container{
   width: 100%;
   height: 125%;
