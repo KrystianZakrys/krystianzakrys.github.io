@@ -9,7 +9,39 @@
               <h6 style="line-height: 1px; opacity: 0.75; font-size: 3vh;">Fullstack Developer</h6>
               <p style="font-size: 2vh;" class="mb-1 mt-3">Specializing in .NET development and creating responsive interfaces with Angular. As an Azure DevOps Expert and Solutions Architect, I bring expertise in cloud solutions and DevOps practices.
                 <br/><br/>Let’s connect!</p>
-              <button class="btn btn-myOwn text-dark mt-1" [routerLink]="'https://www.linkedin.com/in/krystianzakrys/'">GET IN TOUCH</button>
+              <button type="button" class="btn btn-myOwn text-dark mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">GET IN TOUCH</button>
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You can contact me</h5>
+        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+          <img width="24" height="24" src="https://img.icons8.com/shadow/24/341a81/delete-sign.png" alt="delete-sign" style="pointer-events: none;"/>
+        </button>
+      </div>
+      <div class="modal-body text-center p-5">
+        <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/341a81/paper-plane--v3.png" alt="paper-plane--v3"/>
+        <p class="text-dark mt-3 mb-5">Please send me an email or visit LinkedIn and PM me there.</p>
+        <div class="row">
+          <div class="col-6">
+            <a href="mailto:xyz@example.com?Subject=Hello&body=links:  %0D
+            http://link1.com  %0D http://link1.com " target="_top" class="btn btn-primary">
+              <img width="32" height="32" src="https://img.icons8.com/pastel-glyph/64/FFFFFF/email--v3.png" alt="email--v3" style="pointer-events: none;"/>
+              Send email
+            </a>
+          </div>
+          <div class="col-6">  <a class="btn btn-secondary" href="https://www.linkedin.com/in/krystianzakrys/" target="_blank">
+            <img width="32" height="32" src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png" alt="linkedin" style="pointer-events: none;"/>
+            Go to LinkedIn
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
           <div class="row h-50 pt-3 pt-md-0">
@@ -139,4 +171,3 @@
 </div>
 
 </div>
-
