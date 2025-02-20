@@ -126,5 +126,18 @@ color: #341A81 !important;
 
 .skill-container > img{
   margin: 1vh;
-  height: 4vh;
+  height: min(4vh, 33px);
+}
+
+.dark-link{
+  color: #341A81 !important;
+  font-weight: 500;
+  transition: 0.1s;
+}
+
+.dark-link:hover{
+  color: #4311d8 !important;
+  font-weight: 500;
+  font-size: 13pt;
+  transition: 0.1s;
 }
