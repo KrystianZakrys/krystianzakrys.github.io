@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DateDifferencePipe } from './date-difference.pipe';
 import { ProjectsCarouselleComponent } from './projects-carouselle/projects-carouselle.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DateDifferencePipe,
     ProjectsCarouselleComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,
